@@ -5,10 +5,13 @@ Solution 1 : kubectl run nginx-pod-zahi --image alpine/nginx:latest –-port=808
 
 ![image](https://user-images.githubusercontent.com/87436052/126059999-53b6ea01-dd55-42b9-baf3-c85cecddde5d.png)
 
-
 ![image](https://user-images.githubusercontent.com/87436052/126060011-4dd7a9aa-d727-4815-a8e5-49d84787603d.png)
+
+
 Solution 2:
+
 kubectl run messaging --image alpine/redis --labels="tier=msg"
+
 ![image](https://user-images.githubusercontent.com/87436052/126060222-f81b2f0a-4349-467d-9a07-d81657d740c2.png)
 Solution 3:
 kubectl create namespace apx-x998-zahi
