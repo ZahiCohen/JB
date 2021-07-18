@@ -11,6 +11,11 @@ kubectl run messaging --image=redis --labels="tier=msg"
 
 ![image](https://user-images.githubusercontent.com/87436052/126072138-335c774a-e041-4bbc-b32f-e35e893098b2.png)
 
+kubectl get pods -l "tier=msg"
+
+![image](https://user-images.githubusercontent.com/87436052/126072226-1f918e91-b3f8-4a20-b295-ca31e6198459.png)
+
+
 
 Solution 3:
 
