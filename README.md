@@ -30,7 +30,7 @@ Solution 5:
 
 kubectl expose deployment messaging –-port=6379 --type=ClusterIp --name=messaging-service
 
-Solution 7:  (file Also Upload To Git AS: "hr-web-app-deploy-with-2-replica.yaml"
+Solution 7:  (file Also Upload To Git AS: "hr-web-app-deploy-with-2-replica.yaml" )
 
 kubectl create -f hr-web-app-deploy-with-2-replica.yaml
 
@@ -78,6 +78,16 @@ kubectl get pods --namespace finance-zahicohen
 kubectl get namespace
 
 ![image](https://user-images.githubusercontent.com/87436052/126065622-1ea08254-0faa-42e9-8ab8-8c8c230f8696.png)
+
+Solution 10: (file Also Upload To Git AS: "Persistent Volume.yaml" )
+
+kubectl create -f "C:\Users\zahi_c\Desktop\Persistent Volume.yaml"
+
+![image](https://user-images.githubusercontent.com/87436052/126069121-3b483d1c-d62a-4293-83ce-37847332c499.png)
+
+
+
+
 
 
 
