@@ -44,4 +44,41 @@ kubectl get replicaset
 
 ![image](https://user-images.githubusercontent.com/87436052/126060491-84876acf-61a7-4358-b90c-9c853e621257.png)
 
+Solution 8: לבדיקה
+
+How to find master node from worker node in Kubernetes
+
+![image](https://user-images.githubusercontent.com/87436052/126064906-f6b93398-004f-4008-82f8-dddfefb3b234.png)
+
+
+OR :
+
+![image](https://user-images.githubusercontent.com/87436052/126064911-8c5a7645-51cd-4e76-aa21-3265fb2b838e.png)
+
+
+https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/
+
+Solution 9:
+
+kubectl create namespace finance-zahicohen
+
+kubectl run temp-bus --image alpine/redis --port=8080 -n finance-zahicohen
+
+![image](https://user-images.githubusercontent.com/87436052/126065284-f059172b-18fa-4ce7-91f1-af07a5936aee.png)
+
+![image](https://user-images.githubusercontent.com/87436052/126065291-8cfad346-9fc1-47aa-b6ef-2863bb58ac7b.png)
+
+Verfiy :
+
+kubetl get pods
+
+kubectl get namespace
+
+![image](https://user-images.githubusercontent.com/87436052/126065622-1ea08254-0faa-42e9-8ab8-8c8c230f8696.png)
+
+
+
+
+
+
 
