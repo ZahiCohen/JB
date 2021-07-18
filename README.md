@@ -43,6 +43,8 @@ kubectl expose deployment messaging-app --port=6379 --type=ClusterIP --name=mess
 
 Solution 7:  (file Also Upload To Git AS: "hr-web-app-deploy-with-2-replica.yaml" )
 
+Link : https://github.com/ZahiCohen/JB/blob/main/hr-web-app-deploy-with-2-replica.yaml
+
 kubectl create -f "C:\Users\zahi_c\Desktop\hr-web-app-deploy-with-2-replica.yaml"
 
 Yaml File:
