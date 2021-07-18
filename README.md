@@ -7,9 +7,10 @@ Solution 1 : kubectl run nginx-pod-zahi --image=nginx:latest --port=8080
 
 Solution 2:
 
-kubectl run messaging --image alpine/redis --labels="tier=msg"
+kubectl run messaging --image=redis --labels="tier=msg"
 
-![image](https://user-images.githubusercontent.com/87436052/126060222-f81b2f0a-4349-467d-9a07-d81657d740c2.png)
+![image](https://user-images.githubusercontent.com/87436052/126072138-335c774a-e041-4bbc-b32f-e35e893098b2.png)
+
 
 Solution 3:
 
