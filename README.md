@@ -70,7 +70,7 @@ kubectl run temp-bus --image alpine/redis --port=8080 -n finance-zahicohen
 
 Verfiy :
 
-kubetl get pods
+kubectl get pods
 
 kubectl get namespace
 
