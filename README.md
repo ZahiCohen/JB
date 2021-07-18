@@ -35,12 +35,13 @@ Solution 7:  (file Also Upload To Git AS: "hr-web-app-deploy-with-2-replica.yaml
 kubectl create -f hr-web-app-deploy-with-2-replica.yaml
 
 Yaml File:
-![image](https://user-images.githubusercontent.com/87436052/126060513-164834e6-41d1-4947-80af-dfb0ceef5c36.png)
 
+![image](https://user-images.githubusercontent.com/87436052/126060656-9a3056d8-f09a-42f0-bc97-bfd9588f390e.png)
 
 ![image](https://user-images.githubusercontent.com/87436052/126060481-07243b43-6e2c-4f07-b8e2-903fa702c637.png)
 
 kubectl get replicaset
+
 ![image](https://user-images.githubusercontent.com/87436052/126060491-84876acf-61a7-4358-b90c-9c853e621257.png)
 
 
