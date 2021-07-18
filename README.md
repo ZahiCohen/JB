@@ -85,6 +85,10 @@ kubectl create -f "C:\Users\zahi_c\Desktop\Persistent Volume.yaml"
 
 ![image](https://user-images.githubusercontent.com/87436052/126069121-3b483d1c-d62a-4293-83ce-37847332c499.png)
 
+test
+
+![image](https://user-images.githubusercontent.com/87436052/126071157-203f4ca6-95dc-4832-97bf-d1ce3197368f.png)
+
 
 
 
