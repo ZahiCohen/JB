@@ -15,13 +15,15 @@ kubectl get pods -l "tier=msg"
 
 ![image](https://user-images.githubusercontent.com/87436052/126072226-1f918e91-b3f8-4a20-b295-ca31e6198459.png)
 
-
-
 Solution 3:
 
 kubectl create namespace apx-x998-zahi
 
-![image](https://user-images.githubusercontent.com/87436052/126060280-ee334694-bc19-4539-8f2f-fdece0c56b3e.png)
+![image](https://user-images.githubusercontent.com/87436052/126072299-ac068b11-5c1d-484b-8df0-f753f3fb3eaf.png)
+
+kubectl get pods namespace
+
+![image](https://user-images.githubusercontent.com/87436052/126072318-edcb2d30-54f7-469a-9f7d-418764f35531.png)
 
 Solution 4:
 
@@ -31,11 +33,17 @@ kubectl get nodes -o jsonpath='/tmp/nodes-zahi'
 
 Solution 5:
 
-kubectl expose deployment messaging –-port=6379 --type=ClusterIp --name=messaging-service
+kubectl create deployment --image=messaging messaging-app
+
+![image](https://user-images.githubusercontent.com/87436052/126072545-b36290e1-1aef-40ba-bb7d-9a5a9b38e363.png)
+
+kubectl expose deployment messaging-app --port=6379 --type=ClusterIP --name=messaging-service
+
+![image](https://user-images.githubusercontent.com/87436052/126072560-49a49a69-3fa8-4c92-843c-a70fe2aa42df.png)
 
 Solution 7:  (file Also Upload To Git AS: "hr-web-app-deploy-with-2-replica.yaml" )
 
-kubectl create -f hr-web-app-deploy-with-2-replica.yaml
+kubectl create -f "C:\Users\zahi_c\Desktop\hr-web-app-deploy-with-2-replica.yaml"
 
 Yaml File:
 
