@@ -131,6 +131,13 @@ kubectl get pv pv-1
 
 ![image](https://user-images.githubusercontent.com/87436052/126155929-c8fc49d9-d4d6-452a-a35d-1a2c5d914bb0.png)
 
+Create Claim : yaml : https://github.com/ZahiCohen/JB/blob/main/claim%20PersistentVolume.yaml
+
+kubectl create -f "C:\Users\zahi_c\Desktop\New folder\claim PersistentVolume.yaml"
+
+![image](https://user-images.githubusercontent.com/87436052/126156240-60591d27-b709-406e-ae16-447af38e7360.png)
+
+
 
 
 
