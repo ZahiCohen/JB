@@ -101,7 +101,9 @@ kubectl get namespace
 
 ![image](https://user-images.githubusercontent.com/87436052/126065622-1ea08254-0faa-42e9-8ab8-8c8c230f8696.png)
 
-Solution 10: (file Also Upload To Git AS: "Persistent Volume.yaml" )
+Solution 10: 
+
+(file Also Upload To Git AS: "Persistent Volume.yaml" ) https://github.com/ZahiCohen/JB/blob/main/Persistent%20Volume.yaml
 
 kubectl create -f "C:\Users\zahi_c\Desktop\Persistent Volume.yaml"
 
