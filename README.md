@@ -77,8 +77,10 @@ kubectl run --restart=Never --image=busybox static-busybox -o yaml --command -- 
 
 ![image](https://user-images.githubusercontent.com/87436052/126146250-911b55ec-53bf-458c-b549-ce64c2da9973.png)
 
-
 yaml file: https://github.com/ZahiCohen/JB/blob/main/static-busybox.yaml
+
+![image](https://user-images.githubusercontent.com/87436052/126146404-b96ef533-0eef-48ee-afc8-204c31fe795c.png)
+
 
 Solution 9:
 
@@ -95,7 +97,6 @@ Verfiy :
 kubectl get pods --namespace finance-zahicohen
 
 ![image](https://user-images.githubusercontent.com/87436052/126065699-a4595a1f-d3f5-4ca2-b0a5-53dda6be27c0.png)
-
 
 kubectl get namespace
 
