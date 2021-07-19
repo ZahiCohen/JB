@@ -137,6 +137,15 @@ kubectl create -f "C:\Users\zahi_c\Desktop\New folder\claim PersistentVolume.yam
 
 ![image](https://user-images.githubusercontent.com/87436052/126156240-60591d27-b709-406e-ae16-447af38e7360.png)
 
+Create Pod:
+
+yaml : https://github.com/ZahiCohen/JB/blob/main/create%20pod%20with%20pv.yaml
+
+kubectl create -f "C:\Users\zahi_c\Desktop\New folder\create pod with pv.yaml"
+
+![image](https://user-images.githubusercontent.com/87436052/126158262-01d83e45-849c-45c7-a8ec-9c9b596982bc.png)
+
+
 
 
 
