@@ -39,13 +39,13 @@ kubectl get nodes -o jsonpath='/tmp/nodes-zahi'
 
 Solution 5:
 
-kubectl create deployment --image=messaging messaging-app
+kubectl create deployment --image=redis messaging-app
 
-![image](https://user-images.githubusercontent.com/87436052/126072545-b36290e1-1aef-40ba-bb7d-9a5a9b38e363.png)
+![image](https://user-images.githubusercontent.com/87436052/126132818-8173501b-f3c3-4c93-b396-5a6d9205def1.png)
 
 kubectl expose deployment messaging-app --port=6379 --type=ClusterIP --name=messaging-service
 
-![image](https://user-images.githubusercontent.com/87436052/126072560-49a49a69-3fa8-4c92-843c-a70fe2aa42df.png)
+![image](https://user-images.githubusercontent.com/87436052/126132918-e87fd549-8208-4f93-beaa-95f74b94bd3a.png)
 
 Solution 7:  (file Also Upload To Git AS: "hr-web-app-deploy-with-2-replica.yaml" )
 
