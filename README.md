@@ -85,7 +85,7 @@ Solution 9:
 
 kubectl create namespace finance-zahicohen
 
-kubectl run temp-bus --image alpine/redis --port=8080 -n finance-zahicohen
+kubectl run temp-bus --image=redis --port=8080 -n finance-zahicohen
 
 ![image](https://user-images.githubusercontent.com/87436052/126065284-f059172b-18fa-4ce7-91f1-af07a5936aee.png)
 
