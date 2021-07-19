@@ -1,7 +1,11 @@
 # JB
 מטלה מסכמת גון ברייס
 
-Solution 1 : kubectl run nginx-pod-zahi --image=nginx:latest --port=8080
+Solution 1 : 
+
+kubectl run nginx-pod-zahi --image=nginx:latest --port=8080
+
+kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126072081-a24530b5-ae8f-4d1b-a7c2-557373c2a11b.png)
 
