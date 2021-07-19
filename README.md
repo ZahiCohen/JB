@@ -85,9 +85,9 @@ Solution 9:
 
 kubectl create namespace finance-zahicohen
 
-kubectl run temp-bus --image=redis --port=8080 -n finance-zahicohen
-
 ![image](https://user-images.githubusercontent.com/87436052/126065284-f059172b-18fa-4ce7-91f1-af07a5936aee.png)
+
+kubectl run temp-bus --image=redis --port=8080 -n finance-zahicohen
 
 ![image](https://user-images.githubusercontent.com/87436052/126065291-8cfad346-9fc1-47aa-b6ef-2863bb58ac7b.png)
 
@@ -95,7 +95,7 @@ Verfiy :
 
 kubectl get pods --namespace finance-zahicohen
 
-![image](https://user-images.githubusercontent.com/87436052/126065699-a4595a1f-d3f5-4ca2-b0a5-53dda6be27c0.png)
+![image](https://user-images.githubusercontent.com/87436052/126147538-00e85029-e342-4d3e-a994-cb308bd05834.png)
 
 kubectl get namespace
 
