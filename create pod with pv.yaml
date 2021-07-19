@@ -1,7 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pvspec-zahi
+  creationTimestamp: null
+  labels:
+     run: use-pv
+  name: use-pvspec-zahi8
 spec:
   volumes:
     - name: pvspec-vol-zahi
@@ -10,10 +13,10 @@ spec:
   containers:
     - name: use-pv
       image: nginx
-      ports:
-        - containerPort: 80
-          name: "http-server"
+      resources: {}
       volumeMounts:
         - mountPath: "/data"
           name: pvspec-vol-zahi
+status: {}
+
 
