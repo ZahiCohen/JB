@@ -145,6 +145,17 @@ kubectl create -f "C:\Users\zahi_c\Desktop\New folder\create pod with pv.yaml"
 
 ![image](https://user-images.githubusercontent.com/87436052/126158262-01d83e45-849c-45c7-a8ec-9c9b596982bc.png)
 
+Solution 13:
+
+kubectl create -f "C:\Users\zahi_c\Desktop\New folder\deploy-nginx-1.16.yaml"
+
+yaml: https://github.com/ZahiCohen/JB/blob/main/deploy-nginx-1.16.yaml
+
+![image](https://user-images.githubusercontent.com/87436052/126162563-120911fd-3269-465e-970b-3d904075db25.png)
+
+
+
+
 
 
 
