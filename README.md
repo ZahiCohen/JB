@@ -89,7 +89,7 @@ kubectl create namespace finance-zahicohen
 
 kubectl run temp-bus --image=redis --port=8080 -n finance-zahicohen
 
-![image](https://user-images.githubusercontent.com/87436052/126065291-8cfad346-9fc1-47aa-b6ef-2863bb58ac7b.png)
+![image](https://user-images.githubusercontent.com/87436052/126147707-7feb3026-efc6-4800-9bd7-4be768c67657.png)
 
 Verfiy :
 
