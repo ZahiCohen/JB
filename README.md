@@ -27,7 +27,7 @@ kubectl create namespace apx-x998-zahi
 
 ![image](https://user-images.githubusercontent.com/87436052/126072299-ac068b11-5c1d-484b-8df0-f753f3fb3eaf.png)
 
-kubectl get pods namespace
+kubectl get namespace
 
 ![image](https://user-images.githubusercontent.com/87436052/126072318-edcb2d30-54f7-469a-9f7d-418764f35531.png)
 
