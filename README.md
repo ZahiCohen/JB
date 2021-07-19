@@ -63,19 +63,14 @@ kubectl get replicaset
 
 ![image](https://user-images.githubusercontent.com/87436052/126060491-84876acf-61a7-4358-b90c-9c853e621257.png)
 
-Solution 8: לבדיקה
+Solution 8: 
 
-How to find master node from worker node in Kubernetes
+How to find master node
 
-![image](https://user-images.githubusercontent.com/87436052/126064906-f6b93398-004f-4008-82f8-dddfefb3b234.png)
+kubectl get nodes
 
-
-OR :
-
-![image](https://user-images.githubusercontent.com/87436052/126064911-8c5a7645-51cd-4e76-aa21-3265fb2b838e.png)
-
-
-https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/
+run on master node:
+$ kubectl run --restart=Never --image=busybox static-busybox --dry-run=client -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
 
 Solution 9:
 
