@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-storage-zahi
+spec:
+  containers:
+  - name: redis
+    image: redis
+    volumeMounts:
+    - name: redis-storage-zahi
+      mountPath: /data/redis
+  volumes:
+  - name: redis-storage-zahi
+    emptyDir: {}
