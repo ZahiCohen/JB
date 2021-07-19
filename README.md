@@ -121,6 +121,16 @@ kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126151003-4a7c055d-165c-47a3-9f19-bd43d725f672.png)
 
+Solution 12:
+
+yaml file https://github.com/ZahiCohen/JB/blob/main/Create%20a%20PersistentVolume.yaml
+
+kubectl create -f "C:\Users\zahi_c\Desktop\New folder\Create a PersistentVolume.yaml"
+
+kubectl get pv pv-1
+
+![image](https://user-images.githubusercontent.com/87436052/126155929-c8fc49d9-d4d6-452a-a35d-1a2c5d914bb0.png)
+
 
 
 
