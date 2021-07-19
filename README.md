@@ -109,6 +109,21 @@ kubectl create -f "C:\Users\zahi_c\Desktop\Persistent Volume.yaml"
 
 ![image](https://user-images.githubusercontent.com/87436052/126148054-cff72767-0f43-4088-b087-b48338d6a04b.png)
 
+Solution 11:
+
+kubectl create -f "C:\Users\zahi_c\Desktop\Pod-Empty-Dir.yaml"
+
+yaml file : https://github.com/ZahiCohen/JB/blob/main/Pod-Empty-Dir.yaml
+
+![image](https://user-images.githubusercontent.com/87436052/126150894-8e31eed7-cb17-43e4-8482-a5eac319df74.png)
+
+kubectl get pods
+
+![image](https://user-images.githubusercontent.com/87436052/126151003-4a7c055d-165c-47a3-9f19-bd43d725f672.png)
+
+
+
+
 
 
 
