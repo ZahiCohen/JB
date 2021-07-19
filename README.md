@@ -65,14 +65,13 @@ kubectl get replicaset
 
 Solution 8: 
 
-How to find master node
-
-kubectl get nodes
+How to find master node:  kubectl get nodes
 
 run on master node:
 
-
 kubectl run --restart=Never --image=busybox static-busybox --dry-run=client -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
+
+yaml file: https://github.com/ZahiCohen/JB/blob/main/static-busybox.yaml
 
 Solution 9:
 
