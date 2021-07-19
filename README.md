@@ -73,14 +73,13 @@ kubectl get nodes
 
 2. run on master node:
 
+yaml file: https://github.com/ZahiCohen/JB/blob/main/static-busybox.yaml
+
 kubectl run --restart=Never --image=busybox static-busybox -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
 
 ![image](https://user-images.githubusercontent.com/87436052/126146250-911b55ec-53bf-458c-b549-ce64c2da9973.png)
 
-yaml file: https://github.com/ZahiCohen/JB/blob/main/static-busybox.yaml
-
 ![image](https://user-images.githubusercontent.com/87436052/126146404-b96ef533-0eef-48ee-afc8-204c31fe795c.png)
-
 
 Solution 9:
 
