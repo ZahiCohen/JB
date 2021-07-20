@@ -295,9 +295,143 @@ yaml delpyment webapp
 
 kubectl delete deploy webapp
 
-kubectl get po -l app=webapp -w
+kubectl get pod -l app=webapp -w
 
 ![image](https://user-images.githubusercontent.com/87436052/126310501-329159b8-116e-42f8-851d-e6a2e1019577.png)
+
+6.  kubectl create deploy webapp --image=nginx:1.17.1 --dry-run -o yaml
+
+![image](https://user-images.githubusercontent.com/87436052/126314281-cce93f36-b6ee-4e44-98fb-37e536f5bc19.png)
+
+![image](https://user-images.githubusercontent.com/87436052/126314448-cb3a081c-1d88-4b96-a072-50a84f53f206.png)
+
+kubectl create -f "C:\Yaml-Files\web-app-deploy-nginx-1.17.yaml"
+
+![image](https://user-images.githubusercontent.com/87436052/126314569-775b33c8-c2f3-4fbd-830b-dbd5a0ae4604.png)
+
+kubectl describe deploy webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126314716-d5651f35-13f9-428b-9741-cc7cb7c4ed90.png)
+
+7.
+
+kubectl set image deploy/webapp nginx=nginx:1.17.4
+
+kubectl describe deploy webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126314877-27c8c71c-21ae-4492-9a35-8bcdc0c3096e.png)
+
+![image](https://user-images.githubusercontent.com/87436052/126314908-9ab4f1b9-dfe5-4ddf-893b-d74495751600.png)
+
+8.   
+
+kubectl rollout history deploy webapp
+kubectl get deploy webapp --show-labels
+kubectl get rs -l app=webapp
+kubectl get po -l app=webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126315068-a56cdbe1-9aac-4b00-9692-cfd5c3c9385b.png)
+
+9.
+
+kubectl rollout undo deploy webapp
+kubectl describe deploy webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126315505-81042a6a-25a7-4fa2-ad4a-566080fa5db6.png)
+
+10.
+
+a.
+
+kubectl set image deploy/webapp nginx=nginx:1.100
+
+kubectl rollout status deploy webapp
+
+kubectl get pods
+
+![image](https://user-images.githubusercontent.com/87436052/126316307-b1e68317-ec34-48a0-96df-e88380eac34c.png)
+
+b.
+
+kubectl rollout undo deploy webapp
+kubectl rollout status deploy webapp
+kubectl get pods
+
+![image](https://user-images.githubusercontent.com/87436052/126316607-69be820c-0234-46c5-a3f3-071562679122.png)
+
+c.
+
+kubectl rollout history deploy webapp --revision=7
+
+kubectl rollout history deploy webapp --revision=2
+
+![image](https://user-images.githubusercontent.com/87436052/126316918-4e779af9-459a-47b3-a92e-093c857d66d9.png)
+
+
+d.
+
+kubectl rollout history deploy webapp --revision=2
+
+![image](https://user-images.githubusercontent.com/87436052/126317009-ef9ff62b-7082-40c7-9b95-347aab35c7f6.png)
+
+
+e.
+
+kubectl set image deploy/webapp nginx=nginx:latest
+
+kubectl rollout history deploy webapp
+
+kubectl describe deploy webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126317265-cd8d5d4c-8a69-40a3-9693-26b7f9838f33.png)
+
+11.
+
+kubectl autoscale deploy webapp --min=10 --max=20 --cpu-percent=85
+
+kubectl get hpa
+
+kubectl get pod -l app=webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126318540-45e15b42-16bd-488c-935d-c8189c96cd63.png)
+
+
+13.
+
+kubectl delete deploy webapp
+
+kubectl delete hpa webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126318658-95628a89-e30b-4289-8945-0cf5a9fe0158.png)
+
+
+14.
+
+kubectl create job hello-job --image=busybox --dry-run -o yaml -- echo "Hello I am from job"
+
+![image](https://user-images.githubusercontent.com/87436052/126318955-d7e334f3-5634-4616-9cc3-cead1d7b7bf7.png)
+
+
+kubectl create -f "C:\Yaml-Files\hello-job.yaml"
+
+![image](https://user-images.githubusercontent.com/87436052/126319269-b726db70-74d1-47e7-984b-bf2fd723a8a9.png)
+
+
+CONFIG MAP
+================
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
