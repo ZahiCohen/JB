@@ -124,6 +124,49 @@ kubectl describe deployments nginx-deploy
 
 ![image](https://user-images.githubusercontent.com/87436052/126278779-aeb8a90e-4013-4e91-9728-9a3c4db5c1a1.png)
 
+Solution 14:
+
+kubectl create -f "C:\Yaml-Files\nginx-resolver.yaml"
+
+kubectl get svc nginx-resolver-service
+
+kubectl get pods nginx-resolver
+
+kubectl run test-nslookup --image=busybox:1.28 -- nslookup nginx-resolver-service
+
+kubectl logs test-nslookup
+
+![image](https://user-images.githubusercontent.com/87436052/126282587-a04fcaff-1cf9-4654-a85b-18bbdf083dea.png)
+
+
+Solution 15: skip
+
+Solution 16:
+
+kubectl create -f "C:\Yaml-Files\multi-pod.yaml"
+
+kubectl get pods
+
+kubectl describe pods multi-pod
+
+![image](https://user-images.githubusercontent.com/87436052/126284734-d5f17ca0-8cf2-4f01-a5d0-2426ee811f01.png)
+
+
+![image](https://user-images.githubusercontent.com/87436052/126284930-55688e2a-c632-4335-bdfb-7fd52c20e2fe.png)
+
+
+Pod Design Answres:
+
+1. 
+
+
+
+
+
+
+
+
+
 
 
 
