@@ -1,0 +1,28 @@
+---
+apiVersion: v1
+kind: Service 
+metadata:
+  name: nginx-resolver-service
+spec:
+  selector:
+    app: nginx
+    name: busybox
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 9376
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-resolver
+  labels:
+    name: busybox
+    app: nginx
+spec:
+  containers:
+  - name: nginx-resolver
+    image: nginx
+    ports:
+    - containerPort: 80
