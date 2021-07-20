@@ -25,11 +25,18 @@ Solution 2:
 
 kubectl create -f "C:\Yaml-Files\messaging-pod.yaml"
 
+yaml file: https://github.com/ZahiCohen/JB/blob/main/messaging-pod.yaml
+
 kubectl get pods
 
 kubectl get pods -l "tier=msg"
 
 ![image](https://user-images.githubusercontent.com/87436052/126273346-d075ee12-310f-4500-89d8-8393a7601d67.png)
+
+kubectl get pods --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126328170-5dc7ace8-26de-42d6-92c2-b2ad7dcc7ca8.png)
+
 
 Solution 3:
 
