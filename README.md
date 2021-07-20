@@ -454,6 +454,8 @@ kubectl exec -it nginx -- env
 
 kubectl delete po nginx
 
+![image](https://user-images.githubusercontent.com/87436052/126321711-4bebdbe9-0e36-4188-9f4e-8e60a7fdcde7.png)
+
 
 
 
