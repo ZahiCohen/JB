@@ -161,7 +161,12 @@ kubectl describe pods multi-pod
 
 Pod Design Answres:
 
-1. 
+1. kubectl get pods --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126289175-d8e3afc6-bca3-4cb2-9615-b3d503704b10.png)
+
+
+
 
 
 
