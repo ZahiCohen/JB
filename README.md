@@ -15,6 +15,8 @@ Solution 1 :
 
 kubectl create -f "C:\Yaml-Files\nginx-pod-zahi.yaml"
 
+yaml file : https://github.com/ZahiCohen/JB/blob/main/nginx-pod-zahi.yaml
+
 kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126272697-2c52f137-5329-46fa-9fb0-36481060127e.png)
