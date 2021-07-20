@@ -6,6 +6,9 @@
 המטלה נעשתה על מיניקיוב בווינדוס 10
 יש להוריד את קבצי הימל לתקייה ולהריץ בהתאם לנתיב הנכון
 
+ועל גירסת ubuntu בווינדוס 10
+
+
 Solution 1 : 
 
 kubectl create -f "C:\Yaml-Files\nginx-pod-zahi.yaml"
