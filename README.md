@@ -165,6 +165,117 @@ Pod Design Answres:
 
 ![image](https://user-images.githubusercontent.com/87436052/126289175-d8e3afc6-bca3-4cb2-9615-b3d503704b10.png)
 
+2. nginx x 5 with label
+
+kubectl run nginx-1 --image=nginx --labels env=prod
+kubectl run nginx-2 --image=nginx --labels env=prod
+kubectl run nginx-3 --image=nginx --labels env=dev
+kubectl run nginx-4 --image=nginx --labels env=dev
+kubectl run nginx-5 --image=nginx --labels env=dev
+
+![image](https://user-images.githubusercontent.com/87436052/126293909-b06b4bed-28e0-46e0-85f4-17058beb42e3.png)
+
+
+3. kubectl get pods --show-labels 
+
+![image](https://user-images.githubusercontent.com/87436052/126294234-0431b6aa-7610-4cce-9885-95f237a2dfa0.png)
+
+4. kubectl get pods -l env=dev
+
+![image](https://user-images.githubusercontent.com/87436052/126294372-8b3d51c4-7dbd-46e0-bde3-da7370db759a.png)
+
+5. kubectl get pods -l env=dev --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126296691-54e64670-50bd-45bc-9ae8-dd1fb1769682.png)
+
+6. kubectl get pods -l env=prod
+
+![image](https://user-images.githubusercontent.com/87436052/126296024-8582c894-c192-4e5a-8dc0-2359b84aeda0.png)
+
+7. kubectl get pods -l env=prod
+
+![image](https://user-images.githubusercontent.com/87436052/126296907-859652ed-6c30-41b5-8ea7-1af763d722d5.png)
+
+8. kubectl get pods -l env
+
+![image](https://user-images.githubusercontent.com/87436052/126297046-5465d23c-00c2-4d87-b523-36e88b3aaf1c.png)
+
+9. kubectl get pods -l env --show-labels (testing)
+
+![image](https://user-images.githubusercontent.com/87436052/126298789-e9abe9ca-7c1f-4774-a68e-097d7b945544.png)
+
+10. kubectl get pods -l env --show-labels > output.txt 
+
+11. kubectl label pods nginx-5 env=uat --overwrite
+
+    kubectl get pods -l env --show-labels 
+    
+    ![image](https://user-images.githubusercontent.com/87436052/126299422-6b7b3161-f69a-4998-ad3a-d1ca560ca4a4.png)
+
+
+12. kubectl label pods -l env env
+
+kubectl get pods --show-labels 
+
+![image](https://user-images.githubusercontent.com/87436052/126301721-0fc4e5a8-0638-4c69-9ed6-fd45c154f5fd.png)
+
+
+![image](https://user-images.githubusercontent.com/87436052/126301886-e8725df2-bee8-4abc-a048-e2669c3f219c.png)
+
+13. kubectl label pods --all app=nginx --overwrite
+
+kubectl get pods --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126303143-47cb54a8-13c7-4b19-9a35-cbd2192fa69f.png)
+
+
+14. kubectl get nodes --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126303437-d0d2b3b7-ba97-4299-9c55-9ea39e9b5d7a.png)
+
+15. kubectl label nodes minikube nodeName=nginxnode
+
+![image](https://user-images.githubusercontent.com/87436052/126303733-a1777f19-94da-4651-bde8-86d13f800263.png)
+
+16. kubectl create -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"
+
+![image](https://user-images.githubusercontent.com/87436052/126304510-a2eeaf7c-c194-4e7a-bf74-f077bde29305.png)
+
+17. kubectl describe pods nginx 
+
+![image](https://user-images.githubusercontent.com/87436052/126305441-195535b2-9f8a-481b-af66-f92ab30bbbda.png)
+
+FIX:
+
+kubectl apply -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"
+
+![image](https://user-images.githubusercontent.com/87436052/126306610-7dc80778-f09f-410e-a52a-191bbd38a4cf.png)
+
+18. kubectl get pods nginx --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126305882-f502dce9-2c69-46bd-bb81-589fb7029d7d.png)
+
+DEPLOYMENTS :
+------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
