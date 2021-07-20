@@ -72,23 +72,15 @@ kubectl run --restart=Never --image=busybox static-busybox -o yaml --command -- 
 
 Solution 9:
 
-kubectl create namespace finance-zahicohen
-
-![image](https://user-images.githubusercontent.com/87436052/126065284-f059172b-18fa-4ce7-91f1-af07a5936aee.png)
-
-kubectl run temp-bus --image=redis --port=8080 -n finance-zahicohen
-
-![image](https://user-images.githubusercontent.com/87436052/126147707-7feb3026-efc6-4800-9bd7-4be768c67657.png)
-
-Verfiy :
-
-kubectl get pods --namespace finance-zahicohen
-
-![image](https://user-images.githubusercontent.com/87436052/126147538-00e85029-e342-4d3e-a994-cb308bd05834.png)
+kubectl create -f "C:\Yaml-Files\create-finance-pod.yaml"
 
 kubectl get namespace
 
-![image](https://user-images.githubusercontent.com/87436052/126065622-1ea08254-0faa-42e9-8ab8-8c8c230f8696.png)
+![image](https://user-images.githubusercontent.com/87436052/126275804-223bae65-7d49-4d3d-9696-84657a36e131.png)
+
+kubectl get pods --namespace finance-zahi
+
+![image](https://user-images.githubusercontent.com/87436052/126275837-60bd69b0-3932-40cc-9320-c9d7fe61007c.png)
 
 Solution 10: 
 
