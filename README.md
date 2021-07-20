@@ -261,6 +261,51 @@ kubectl apply -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"
 DEPLOYMENTS :
 ------------------
 
+1.  kubectl create -f "C:\Yaml-Files\web-app-deployment-5-replic.yaml"
+
+![image](https://user-images.githubusercontent.com/87436052/126307692-713f5c30-6629-485c-9d5e-47d95661c656.png)
+
+kubectl get deployments webapp 
+
+![image](https://user-images.githubusercontent.com/87436052/126307789-b720b790-b745-4d68-819c-186550ec5135.png)
+
+
+2. kubectl rollout status deployment webapp 
+
+![image](https://user-images.githubusercontent.com/87436052/126307902-09105de1-1590-479f-92c2-0fa7a6b8692f.png)
+
+3.  kubectl get pods
+
+kubectl get rs webapp-5654c984c
+
+![image](https://user-images.githubusercontent.com/87436052/126308425-a4eb1d21-ddfc-47fc-9296-180b480274bc.png)
+
+4.  EXPORT :
+
+yaml replica :  kubectl get rs webapp-5654c984c -o yaml
+
+![image](https://user-images.githubusercontent.com/87436052/126309048-1b2ba741-3e1f-4345-a11a-0aa4fc47ee08.png)
+
+yaml delpyment webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126309165-f2c379aa-fbe6-4017-9834-f3c086c7aef0.png)
+
+
+5. 
+
+kubectl delete deploy webapp
+
+kubectl get po -l app=webapp -w
+
+![image](https://user-images.githubusercontent.com/87436052/126310501-329159b8-116e-42f8-851d-e6a2e1019577.png)
+
+
+
+
+
+
+
+
 
 
 
