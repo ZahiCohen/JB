@@ -1,25 +1,26 @@
 # JB
 מטלה מסכמת גון ברייס
 
+המטלה נעשתה על מיניקיוב בווינדוס 10
+יש להוריד את קבצי הימל לתקייה ולהריץ בהתאם לנתיב הנכון
+
 Solution 1 : 
 
-kubectl run nginx-pod-zahi --image=nginx:latest --port=8080
+kubectl create -f "C:\Yaml-Files\nginx-pod-zahi.yaml"
 
 kubectl get pods
 
-![image](https://user-images.githubusercontent.com/87436052/126072081-a24530b5-ae8f-4d1b-a7c2-557373c2a11b.png)
+![image](https://user-images.githubusercontent.com/87436052/126272697-2c52f137-5329-46fa-9fb0-36481060127e.png)
 
 Solution 2:
 
-kubectl run messaging --image=redis --labels="tier=msg"
+kubectl create -f "C:\Yaml-Files\messaging-pod.yaml"
 
 kubectl get pods
 
-![image](https://user-images.githubusercontent.com/87436052/126072138-335c774a-e041-4bbc-b32f-e35e893098b2.png)
-
 kubectl get pods -l "tier=msg"
 
-![image](https://user-images.githubusercontent.com/87436052/126072226-1f918e91-b3f8-4a20-b295-ca31e6198459.png)
+![image](https://user-images.githubusercontent.com/87436052/126273346-d075ee12-310f-4500-89d8-8393a7601d67.png)
 
 Solution 3:
 
@@ -39,29 +40,19 @@ kubectl get nodes -o jsonpath='/tmp/nodes-zahi'
 
 Solution 5:
 
-kubectl create deployment --image=redis messaging-app
+kubectl create -f "C:\Yaml-Files\messaging-service.yaml"
 
-![image](https://user-images.githubusercontent.com/87436052/126132818-8173501b-f3c3-4c93-b396-5a6d9205def1.png)
+kubectl get svc
 
-kubectl expose deployment messaging-app --port=6379 --type=ClusterIP --name=messaging-service
+![image](https://user-images.githubusercontent.com/87436052/126273857-dcb677ef-5109-42c0-8717-e221c5684ba9.png)
 
-![image](https://user-images.githubusercontent.com/87436052/126132918-e87fd549-8208-4f93-beaa-95f74b94bd3a.png)
+Solution 7: 
 
-Solution 7:  (file Also Upload To Git AS: "hr-web-app-deploy-with-2-replica.yaml" )
-
-Link : https://github.com/ZahiCohen/JB/blob/main/hr-web-app-deploy-with-2-replica.yaml
-
-kubectl create -f "C:\Users\zahi_c\Desktop\hr-web-app-deploy-with-2-replica.yaml"
-
-Yaml File:
-
-![image](https://user-images.githubusercontent.com/87436052/126060656-9a3056d8-f09a-42f0-bc97-bfd9588f390e.png)
-
-![image](https://user-images.githubusercontent.com/87436052/126060481-07243b43-6e2c-4f07-b8e2-903fa702c637.png)
+kubectl create -f "C:\Yaml-Files\hr-web-app-deploy.yaml"
 
 kubectl get replicaset
 
-![image](https://user-images.githubusercontent.com/87436052/126060491-84876acf-61a7-4358-b90c-9c853e621257.png)
+![image](https://user-images.githubusercontent.com/87436052/126274700-41bcfb87-c0f1-4e47-98a5-62c741a64708.png)
 
 Solution 8: 
 
@@ -72,8 +63,6 @@ kubectl get nodes
 ![image](https://user-images.githubusercontent.com/87436052/126146046-5bdfb40b-4c5c-4a06-8478-8e1526b69200.png)
 
 2. run on master node:
-
-yaml file: https://github.com/ZahiCohen/JB/blob/main/static-busybox.yaml
 
 kubectl run --restart=Never --image=busybox static-busybox -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
 
