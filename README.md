@@ -84,61 +84,45 @@ kubectl get pods --namespace finance-zahi
 
 Solution 10: 
 
-(file Also Upload To Git AS: "Persistent Volume.yaml" ) https://github.com/ZahiCohen/JB/blob/main/Persistent%20Volume.yaml
+kubectl create -f "C:\Yaml-Files\persisten-vol.yaml"
 
-kubectl create -f "C:\Users\zahi_c\Desktop\Persistent Volume.yaml"
+kubectl get pv
 
-![image](https://user-images.githubusercontent.com/87436052/126148054-cff72767-0f43-4088-b087-b48338d6a04b.png)
+![image](https://user-images.githubusercontent.com/87436052/126276667-8dde514b-e61f-4382-b566-28c8111597c3.png)
 
 Solution 11:
 
-kubectl create -f "C:\Users\zahi_c\Desktop\Pod-Empty-Dir.yaml"
+kubectl create -f "C:\Yaml-Files\redis-storage-zahi-pod.yaml"
 
-yaml file : https://github.com/ZahiCohen/JB/blob/main/Pod-Empty-Dir.yaml
-
-![image](https://user-images.githubusercontent.com/87436052/126150894-8e31eed7-cb17-43e4-8482-a5eac319df74.png)
+![image](https://user-images.githubusercontent.com/87436052/126277072-e2f0d87a-19ff-49f9-8798-9fd79e5ae3ad.png)
 
 kubectl get pods
 
-![image](https://user-images.githubusercontent.com/87436052/126151003-4a7c055d-165c-47a3-9f19-bd43d725f672.png)
+![image](https://user-images.githubusercontent.com/87436052/126277135-f52c63dc-33ee-43e8-b78e-76af78b8473e.png)
 
 Solution 12:
 
-yaml file https://github.com/ZahiCohen/JB/blob/main/Create%20a%20PersistentVolume.yaml
+kubectl create -f "C:\Yaml-Files\nginx-pod-attach.yaml"
 
-kubectl create -f "C:\Users\zahi_c\Desktop\New folder\Create a PersistentVolume.yaml"
+kubectl get pvc pv-1
 
-kubectl get pv pv-1
+kubectl get pods use-pv-zahi
 
-![image](https://user-images.githubusercontent.com/87436052/126155929-c8fc49d9-d4d6-452a-a35d-1a2c5d914bb0.png)
-
-Create Claim : yaml : https://github.com/ZahiCohen/JB/blob/main/claim%20PersistentVolume.yaml
-
-kubectl create -f "C:\Users\zahi_c\Desktop\New folder\claim PersistentVolume.yaml"
-
-![image](https://user-images.githubusercontent.com/87436052/126156240-60591d27-b709-406e-ae16-447af38e7360.png)
-
-Create Pod:
-
-yaml : https://github.com/ZahiCohen/JB/blob/main/create%20pod%20with%20pv.yaml
-
-kubectl create -f "C:\Users\zahi_c\Desktop\New folder\create pod with pv.yaml"
-
-![image](https://user-images.githubusercontent.com/87436052/126158262-01d83e45-849c-45c7-a8ec-9c9b596982bc.png)
+![image](https://user-images.githubusercontent.com/87436052/126277986-64ea7098-ab4e-4885-a4e1-3d31771ed067.png)
 
 Solution 13:
 
-kubectl create -f "C:\Users\zahi_c\Desktop\New folder\deploy-nginx-1.16.yaml"
+kubectl create -f "C:\Yaml-Files\nginx-deploy.yaml"
 
-yaml: https://github.com/ZahiCohen/JB/blob/main/deploy-nginx-1.16.yaml
+kubectl get deployments nginx-deploy
 
-![image](https://user-images.githubusercontent.com/87436052/126162563-120911fd-3269-465e-970b-3d904075db25.png)
+kubectl set image deployments nginx-deploy nginx=nginx:1.17 --record
 
+![image](https://user-images.githubusercontent.com/87436052/126278469-e99517bb-8ec9-47e3-8bc4-9c27d6427a3b.png)
 
+kubectl describe deployments nginx-deploy
 
-
-
-
+![image](https://user-images.githubusercontent.com/87436052/126278779-aeb8a90e-4013-4e91-9728-9a3c4db5c1a1.png)
 
 
 
