@@ -420,6 +420,47 @@ kubectl create -f "C:\Yaml-Files\hello-job.yaml"
 CONFIG MAP
 ================
 
+1.  
+
+cat >> config.txt << EOF
+key1=value1
+key2=value2
+EOF
+
+cat config.txt
+
+![image](https://user-images.githubusercontent.com/87436052/126320316-16601806-c448-478e-ae8f-9a52d1e4966d.png)
+
+
+2.
+
+kubectl create cm keyvalcfgmap --from-file=config.txt
+
+kubectl get cm keyvalcfgmap -o yaml
+
+3. 
+
+kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml
+
+![image](https://user-images.githubusercontent.com/87436052/126321016-654fbf5a-c792-4bbd-a1f1-a0aeb09af9ec.png)
+
+ kubectl create -f "C:\Yaml-Files\config-map-nginx.yaml"
+
+![image](https://user-images.githubusercontent.com/87436052/126320879-ae761b76-1070-49bd-b758-da89ee69a891.png)
+
+verify and delete
+
+kubectl exec -it nginx -- env
+
+kubectl delete po nginx
+
+
+
+
+
+
+
+
 
 
 
