@@ -285,9 +285,8 @@ kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-
 11. kubectl label pods nginx-5 env=uat --overwrite
 
     kubectl get pods -l env --show-labels 
-    
-    ![image](https://user-images.githubusercontent.com/87436052/126299422-6b7b3161-f69a-4998-ad3a-d1ca560ca4a4.png)
 
+![image](https://user-images.githubusercontent.com/87436052/126458307-88f85b3f-2bf3-4c5e-b826-48a801fcd613.png)
 
 12. kubectl label pods -l env env
 
