@@ -272,12 +272,13 @@ kubectl run nginx-5 --image=nginx --labels env=dev
 
 9. Run On minikube cmd 
 
-kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-labels
+kubectl get pods -l env=dev & kubectl get pods -l env=prod
+
+![image](https://user-images.githubusercontent.com/87436052/126457542-aed0c847-1a4c-4446-a9a5-41ecbc1bd616.png)
+
+10. kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126457091-58908b93-e93b-429a-ab3f-d9ed8aa0feaf.png)
-
-
-10. kubectl get pods -l env --show-labels > output.txt 
 
 11. kubectl label pods nginx-5 env=uat --overwrite
 
