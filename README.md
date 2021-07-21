@@ -164,13 +164,11 @@ kubectl get deploy
 
 kubectl get pods
 
-kubectl get deployments nginx-deploy
-
 kubectl describe deployments nginx-deploy
 
 kubectl set image deployments nginx-deploy nginx=nginx:1.17 --record
 
-![image](https://user-images.githubusercontent.com/87436052/126449702-5061c02c-796a-48e8-b5da-8be723877326.png)
+![image](https://user-images.githubusercontent.com/87436052/126450692-57b14d2c-87a0-43b4-b01a-e50a5fff1a7d.png)
 
 kubectl describe deployments nginx-deploy
 
