@@ -483,17 +483,13 @@ c.
 
 kubectl rollout history deploy webapp --revision=7
 
-kubectl rollout history deploy webapp --revision=2
-
-![image](https://user-images.githubusercontent.com/87436052/126316918-4e779af9-459a-47b3-a92e-093c857d66d9.png)
-
+![image](https://user-images.githubusercontent.com/87436052/126471104-7f67f278-0e68-445d-aee5-46ef52a92781.png)
 
 d.
 
-kubectl rollout history deploy webapp --revision=2
+kubectl rollout history deploy webapp
 
-![image](https://user-images.githubusercontent.com/87436052/126317009-ef9ff62b-7082-40c7-9b95-347aab35c7f6.png)
-
+![image](https://user-images.githubusercontent.com/87436052/126471190-887a32e5-4959-427d-9fc5-d3f04ec655b8.png)
 
 e.
 
