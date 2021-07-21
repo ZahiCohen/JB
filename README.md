@@ -229,7 +229,7 @@ Pod Design Answres:
 
 1. kubectl get pods --show-labels
 
-![image](https://user-images.githubusercontent.com/87436052/126289175-d8e3afc6-bca3-4cb2-9615-b3d503704b10.png)
+![image](https://user-images.githubusercontent.com/87436052/126455572-5004d51f-5144-46e9-8005-927593f376a8.png)
 
 2. nginx x 5 with label
 
