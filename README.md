@@ -314,7 +314,7 @@ kubectl get pods --show-labels
 
 15. 
 
-command : kubectl label nodes ((worker node name here)) nodeName=nginxnode
+command : kubectl label nodes (worker node name here) nodeName=nginxnode
 
 Run On MiniKube 1 node:
 
