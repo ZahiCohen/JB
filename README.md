@@ -77,8 +77,6 @@ yaml file https://github.com/ZahiCohen/JB/blob/main/hr-web-app-deploy.yaml
 
 kubectl get pods
 
-![image](https://user-images.githubusercontent.com/87436052/126443970-cdb44983-82e8-48ce-81af-829f26d86538.png)
-
 kubectl get replicaset
 
 ![image](https://user-images.githubusercontent.com/87436052/126274700-41bcfb87-c0f1-4e47-98a5-62c741a64708.png)
