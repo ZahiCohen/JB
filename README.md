@@ -477,7 +477,7 @@ kubectl get pods
 
 kubectl describe deploy webapp
 
-![image](https://user-images.githubusercontent.com/87436052/126469864-b4faad85-f76b-49da-b804-657bb06fac52.png)
+![image](https://user-images.githubusercontent.com/87436052/126470595-4c95a7ec-ac6b-40cc-bc8b-78692956846e.png)
 
 c.
 
