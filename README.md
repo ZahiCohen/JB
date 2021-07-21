@@ -12,7 +12,7 @@ ubuntu On Windows 10
 
 ------------------------------------------------
 
-Deploy a pod named nginx-pod using the nginx:alpine image.
+1. Deploy a pod named nginx-pod using the nginx:alpine image.
 Name: nginx-pod-yourname
 Image: nginx:alpine
 
@@ -25,6 +25,13 @@ yaml file : https://github.com/ZahiCohen/JB/blob/main/nginx-pod-zahi.yaml
 kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126272697-2c52f137-5329-46fa-9fb0-36481060127e.png)
+
+
+2. Deploy a messaging pod using the redis:alpine image with the labels set to tier=msg.
+Pod Name: messaging
+Image: redis:alpine
+Labels: tier=msg
+
 
 Solution 2:
 
