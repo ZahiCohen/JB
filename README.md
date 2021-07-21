@@ -330,6 +330,12 @@ yaml file: https://github.com/ZahiCohen/JB/blob/main/pod-deploy-node-worker.yaml
 
 ![image](https://user-images.githubusercontent.com/87436052/126461984-fb501114-a5e2-467e-9cfb-e3d4f5b0e2ee.png)
 
+kubectl get pods -l nodeName
+
+kubectl get pods -l nodeName --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126462321-98440304-a8ff-4e57-b1ce-f0d26d404650.png)
+
 17. kubectl describe pods nginx 
 
 ![image](https://user-images.githubusercontent.com/87436052/126305441-195535b2-9f8a-481b-af66-f92ab30bbbda.png)
