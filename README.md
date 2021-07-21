@@ -270,9 +270,12 @@ kubectl run nginx-5 --image=nginx --labels env=dev
 
 ![image](https://user-images.githubusercontent.com/87436052/126297046-5465d23c-00c2-4d87-b523-36e88b3aaf1c.png)
 
-9. kubectl get pods -l env --show-labels (testing)
+9. Run On minikube cmd 
 
-![image](https://user-images.githubusercontent.com/87436052/126298789-e9abe9ca-7c1f-4774-a68e-097d7b945544.png)
+kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126457091-58908b93-e93b-429a-ab3f-d9ed8aa0feaf.png)
+
 
 10. kubectl get pods -l env --show-labels > output.txt 
 
