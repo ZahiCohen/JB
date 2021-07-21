@@ -439,9 +439,6 @@ kubectl get po -l app=webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126315068-a56cdbe1-9aac-4b00-9692-cfd5c3c9385b.png)
 
-kubectl get deployment webapp
-
-![image](https://user-images.githubusercontent.com/87436052/126467311-1165bc35-554d-41a5-a370-111349e7793c.png)
 
 9.
 
