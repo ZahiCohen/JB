@@ -305,7 +305,7 @@ kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-
 
 kubectl get pods --show-labels
 
-![image](https://user-images.githubusercontent.com/87436052/126303143-47cb54a8-13c7-4b19-9a35-cbd2192fa69f.png)
+![image](https://user-images.githubusercontent.com/87436052/126460481-db646579-9a8a-45b1-8d36-2bc3363861a0.png)
 
 
 14. kubectl get nodes --show-labels
