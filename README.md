@@ -435,7 +435,7 @@ kubectl get deploy webapp --show-labels
 
 kubectl get rs -l app=webapp
 
-kubectl get pods -l app=webapp
+kubectl get po -l app=webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126315068-a56cdbe1-9aac-4b00-9692-cfd5c3c9385b.png)
 
