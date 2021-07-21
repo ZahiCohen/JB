@@ -585,11 +585,12 @@ kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml
 
 ![image](https://user-images.githubusercontent.com/87436052/126320879-ae761b76-1070-49bd-b758-da89ee69a891.png)
 
-verify and delete
+verify and delete :
+--------------------
 
 kubectl exec -it nginx -- env
 
-kubectl delete po nginx
+kubectl delete pod nginx
 
 ![image](https://user-images.githubusercontent.com/87436052/126321711-4bebdbe9-0e36-4188-9f4e-8e60a7fdcde7.png)
 
