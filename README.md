@@ -288,14 +288,14 @@ kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-
 
 ![image](https://user-images.githubusercontent.com/87436052/126458307-88f85b3f-2bf3-4c5e-b826-48a801fcd613.png)
 
-12. kubectl label pods -l env env
+12. kubectl label pods -l env env-
 
-kubectl get pods --show-labels 
+     kubectl get pods --show-labels 
 
-![image](https://user-images.githubusercontent.com/87436052/126301721-0fc4e5a8-0638-4c69-9ed6-fd45c154f5fd.png)
+![image](https://user-images.githubusercontent.com/87436052/126458531-4e4e702e-b76d-4b57-9f92-2302ee722067.png)
 
+![image](https://user-images.githubusercontent.com/87436052/126458574-7468a97b-4c49-465b-976e-4690b5561329.png)
 
-![image](https://user-images.githubusercontent.com/87436052/126301886-e8725df2-bee8-4abc-a048-e2669c3f219c.png)
 
 13. kubectl label pods --all app=nginx --overwrite
 
