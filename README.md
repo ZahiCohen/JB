@@ -109,6 +109,8 @@ Solution 9:
 
 kubectl create -f "C:\Yaml-Files\create-finance-pod.yaml"
 
+yaml file: https://github.com/ZahiCohen/JB/blob/main/create-finance-pod.yaml
+
 kubectl get namespace
 
 ![image](https://user-images.githubusercontent.com/87436052/126275804-223bae65-7d49-4d3d-9696-84657a36e131.png)
