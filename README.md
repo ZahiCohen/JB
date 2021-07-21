@@ -339,14 +339,16 @@ Pod Design Answres:
 -----------------------
 1. Type the command for: Get pods with label information
 
-1.  kubectl get pods --show-labels
+Solution 1:
+
+kubectl get pods --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126455572-5004d51f-5144-46e9-8005-927593f376a8.png)
 
 2. Create 5 nginx pods in which two of them is labeled env=prod and three of them is
 labeled env=dev
 
-2. nginx x 5 with label
+Solution 2:
 
 kubectl run nginx-1 --image=nginx --labels env=prod
 
@@ -362,7 +364,9 @@ kubectl run nginx-5 --image=nginx --labels env=dev
 
 3. Verify all the pods are created with correct labels
 
-3. kubectl get pods --show-labels 
+Solution 3:
+
+kubectl get pods --show-labels 
 
 ![image](https://user-images.githubusercontent.com/87436052/126455812-37b3e965-76cf-4b5b-9988-56631e899272.png)
 
