@@ -507,6 +507,17 @@ kubectl describe deploy webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126317265-cd8d5d4c-8a69-40a3-9693-26b7f9838f33.png)
 
+kubectl rollout history deployment webapp --revision=6
+
+![image](https://user-images.githubusercontent.com/87436052/126474072-6a2f6bbf-5e41-4a22-b756-e9582be99ba4.png)
+
+kubectl get deploy webapp
+
+kubectl describe webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126474236-cb8aebb4-07c6-4d6f-9a70-3ad47de9eb84.png)
+
+
 11.
 
 kubectl autoscale deploy webapp --min=10 --max=20 --cpu-percent=85
