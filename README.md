@@ -409,6 +409,8 @@ kubectl create deploy webapp --image=nginx:1.17.1 --dry-run -o yaml
 
 kubectl create -f "C:\Yaml-Files\web-app-deploy-nginx-1.17.yaml"
 
+yaml file: https://github.com/ZahiCohen/JB/blob/main/web-app-deploy-nginx-1.17.yaml
+
 ![image](https://user-images.githubusercontent.com/87436052/126314569-775b33c8-c2f3-4fbd-830b-dbd5a0ae4604.png)
 
 kubectl describe deploy webapp
