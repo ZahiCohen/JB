@@ -385,7 +385,7 @@ kubectl get rs -l app=webapp
 
 kubectl get rs -l app=webapp -o yaml
 
-kubectl get po -l app=webapp -o yaml
+kubectl get pods -l app=webapp -o yaml
 
 ![image](https://user-images.githubusercontent.com/87436052/126465591-97616368-935d-4b4d-ab92-4c09620bdf4a.png)
 
