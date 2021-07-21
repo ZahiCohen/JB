@@ -103,7 +103,7 @@ kubectl run --restart=Never --image=busybox static-busybox -o yaml --command -- 
 
 kubectl get pods
 
-![image](https://user-images.githubusercontent.com/87436052/126146404-b96ef533-0eef-48ee-afc8-204c31fe795c.png)
+![image](https://user-images.githubusercontent.com/87436052/126445442-dc767d91-f992-4ddb-b0e4-5048f93c42a8.png)
 
 Solution 9:
 
