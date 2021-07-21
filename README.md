@@ -11,6 +11,11 @@
 ubuntu On Windows 10
 
 ------------------------------------------------
+
+Deploy a pod named nginx-pod using the nginx:alpine image.
+Name: nginx-pod-yourname
+Image: nginx:alpine
+
 Solution 1 : 
 
 kubectl create -f "C:\Yaml-Files\nginx-pod-zahi.yaml"
