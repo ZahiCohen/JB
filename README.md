@@ -204,7 +204,9 @@ kubectl get pods nginx-resolver > nginx-zahi.pod
 
 ![image](https://user-images.githubusercontent.com/87436052/126453057-74ea6387-7db4-4b8e-b9bf-b7ee4e6c5d0c.png)
 
-Solution 15: (skipped ) Can Not Apply in minikube found info here : https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/
+Solution 15: (skipped ) Can Not Apply in minikube found info here :
+
+https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/
 
 Solution 16:
 
