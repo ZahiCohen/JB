@@ -342,7 +342,7 @@ kubectl get pods -l nodeName --show-labels
 
 FIX:
 
-kubectl apply -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"
+kubectl apply -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"  yaml file: https://github.com/ZahiCohen/JB/blob/main/pod-deploy-node-worker.yaml
 
 ![image](https://user-images.githubusercontent.com/87436052/126306610-7dc80778-f09f-410e-a52a-191bbd38a4cf.png)
 
