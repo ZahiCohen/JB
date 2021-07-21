@@ -64,6 +64,11 @@ kubectl get svc
 
 ![image](https://user-images.githubusercontent.com/87436052/126273857-dcb677ef-5109-42c0-8717-e221c5684ba9.png)
 
+kubectl get svc --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126443526-a18cf812-99ea-41d8-8357-e041dc98595b.png)
+
+
 Solution 7: 
 
 kubectl create -f "C:\Yaml-Files\hr-web-app-deploy.yaml"
