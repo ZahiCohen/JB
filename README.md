@@ -158,9 +158,7 @@ Solution 13:
 
 kubectl create -f "C:\Yaml-Files\nginx-deploy.yaml"
 
-yaml file : https://github.com/ZahiCohen/JB/blob/main/nginx-deploy.yaml
-
-"spec.replicas defaults to 1 if not specify"
+yaml file : https://github.com/ZahiCohen/JB/blob/main/nginx-deploy.yaml  ( spec.replicas defaults to 1 if not specify )
 
 kubectl get deployments nginx-deploy
 
