@@ -262,7 +262,7 @@ kubectl run nginx-5 --image=nginx --labels env=dev
 
 ![image](https://user-images.githubusercontent.com/87436052/126296024-8582c894-c192-4e5a-8dc0-2359b84aeda0.png)
 
-7. kubectl get pods -l env=prod
+7. kubectl get pods -l env=prod --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126296907-859652ed-6c30-41b5-8ea7-1af763d722d5.png)
 
