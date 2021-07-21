@@ -372,17 +372,23 @@ kubectl get pods --show-labels
 
 4. Get the pods with label env=dev
 
-4. kubectl get pods -l env=dev
+Solution 4:
+
+kubectl get pods -l env=dev
 
 ![image](https://user-images.githubusercontent.com/87436052/126294372-8b3d51c4-7dbd-46e0-bde3-da7370db759a.png)
 
 5. Get the pods with label env=dev and also output the labels
 
-5. kubectl get pods -l env=dev --show-labels
+Solution 5:
+
+kubectl get pods -l env=dev --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126296691-54e64670-50bd-45bc-9ae8-dd1fb1769682.png)
 
-6. Get the pods with label env=prod
+Solution 6:
+
+Get the pods with label env=prod
 
 6. kubectl get pods -l env=prod
 
@@ -390,19 +396,23 @@ kubectl get pods --show-labels
 
 7. Get the pods with label env=prod and also output the labels
 
-7. kubectl get pods -l env=prod --show-labels
+Solution 7:
+
+kubectl get pods -l env=prod --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126296907-859652ed-6c30-41b5-8ea7-1af763d722d5.png)
 
 8. Get the pods with label env
 
-8. kubectl get pods -l env
+Solution 8:
+
+kubectl get pods -l env
 
 ![image](https://user-images.githubusercontent.com/87436052/126297046-5465d23c-00c2-4d87-b523-36e88b3aaf1c.png)
 
 9. Get the pods with labels env=dev and env=prod
 
-9. Run On minikube cmd 
+Solution 9 : Run On minikube cmd 
 
 kubectl get pods -l env=dev & kubectl get pods -l env=prod
 
@@ -410,7 +420,7 @@ kubectl get pods -l env=dev & kubectl get pods -l env=prod
 
 10. Get the pods with labels env=dev and env=prod and output the labels as well
 
-10.   Run On minikube cmd 
+Solution 10: Run On minikube cmd 
 
 kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-labels
 
@@ -418,18 +428,22 @@ kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-
 
 11. Change the label for one of the pod to env=uat and list all the pods to verify
 
-11. kubectl label pods nginx-5 env=uat --overwrite
+Solution 11:
 
-    kubectl get pods -l env --show-labels 
+kubectl label pods nginx-5 env=uat --overwrite
+
+kubectl get pods -l env --show-labels 
 
 ![image](https://user-images.githubusercontent.com/87436052/126458307-88f85b3f-2bf3-4c5e-b826-48a801fcd613.png)
 
 12. Remove the labels for the pods that we created now and verify all the labels are
 removed
 
-12. kubectl label pods -l env env-
+Solution 12:
 
-     kubectl get pods --show-labels 
+kubectl label pods -l env env-
+
+kubectl get pods --show-labels 
 
 ![image](https://user-images.githubusercontent.com/87436052/126458531-4e4e702e-b76d-4b57-9f92-2302ee722067.png)
 
@@ -437,7 +451,7 @@ removed
 
 13. Let’s add the label app=nginx for all the pods and verify (using kubectl)
 
-13.
+Solution 13:
 
  kubectl label pods --all app=nginx --overwrite
 
@@ -449,13 +463,15 @@ kubectl get pods --show-labels
 
 14. Get all the nodes with labels (if using minikube you would get only master node)
 
-14. kubectl get nodes --show-labels
+Solution 14:
+
+kubectl get nodes --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126460784-a8c84bae-d248-4a8b-b7bc-45afcaffd956.png)
 
 15. Label the worker node nodeName=nginxnode
 
-15. 
+Solution 15:
 
 command : kubectl label nodes (worker node name here) nodeName=nginxnode
 
@@ -469,7 +485,7 @@ kubectl label nodes minikube nodeName=nginxnode
 nodeName=nginxnode
 Add the nodeSelector to the below and create the pod
 
-16. 
+Solution 16:
 
 kubectl create -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"
 
@@ -486,7 +502,9 @@ kubectl get pods -l nodeName --show-labels
 17. Verify the pod that it is scheduled with the node selector on the right node… fix it if
 it’s not behind scheduled. 
 
-17. kubectl describe pods nginx 
+Solution 17:
+
+kubectl describe pods nginx 
 
 ![image](https://user-images.githubusercontent.com/87436052/126305441-195535b2-9f8a-481b-af66-f92ab30bbbda.png)
 
@@ -500,7 +518,7 @@ yaml file: https://github.com/ZahiCohen/JB/blob/main/pod-deploy-node-worker.yaml
 
 18. Verify the pod nginx that we just created has this label
 
-18. 
+Solution 18:
 
 kubectl get pods -l nodeName=nginxnode --show-labels
 
