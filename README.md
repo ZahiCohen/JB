@@ -248,7 +248,7 @@ kubectl run nginx-5 --image=nginx --labels env=dev
 
 3. kubectl get pods --show-labels 
 
-![image](https://user-images.githubusercontent.com/87436052/126294234-0431b6aa-7610-4cce-9885-95f237a2dfa0.png)
+![image](https://user-images.githubusercontent.com/87436052/126455812-37b3e965-76cf-4b5b-9988-56631e899272.png)
 
 4. kubectl get pods -l env=dev
 
