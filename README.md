@@ -547,6 +547,8 @@ kubectl create job hello-job --image=busybox --dry-run -o yaml -- echo "Hello I 
 
 kubectl create -f "C:\Yaml-Files\hello-job.yaml"
 
+yaml file: https://github.com/ZahiCohen/JB/blob/main/hello-job.yaml
+
 ![image](https://user-images.githubusercontent.com/87436052/126319269-b726db70-74d1-47e7-984b-bf2fd723a8a9.png)
 
 
