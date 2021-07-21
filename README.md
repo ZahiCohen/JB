@@ -346,9 +346,11 @@ kubectl apply -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"
 
 ![image](https://user-images.githubusercontent.com/87436052/126306610-7dc80778-f09f-410e-a52a-191bbd38a4cf.png)
 
-18. kubectl get pods nginx --show-labels
+18. 
 
-![image](https://user-images.githubusercontent.com/87436052/126305882-f502dce9-2c69-46bd-bb81-589fb7029d7d.png)
+kubectl get pods -l nodeName=nginxnode --show-labels
+
+![image](https://user-images.githubusercontent.com/87436052/126463388-781b551b-1755-49ef-9ea1-a698f13e05f2.png)
 
 DEPLOYMENTS :
 ------------------
