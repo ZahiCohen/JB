@@ -234,9 +234,13 @@ Pod Design Answres:
 2. nginx x 5 with label
 
 kubectl run nginx-1 --image=nginx --labels env=prod
+
 kubectl run nginx-2 --image=nginx --labels env=prod
+
 kubectl run nginx-3 --image=nginx --labels env=dev
+
 kubectl run nginx-4 --image=nginx --labels env=dev
+
 kubectl run nginx-5 --image=nginx --labels env=dev
 
 ![image](https://user-images.githubusercontent.com/87436052/126293909-b06b4bed-28e0-46e0-85f4-17058beb42e3.png)
