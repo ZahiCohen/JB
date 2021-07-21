@@ -160,6 +160,8 @@ kubectl create -f "C:\Yaml-Files\nginx-deploy.yaml"
 
 yaml file : https://github.com/ZahiCohen/JB/blob/main/nginx-deploy.yaml
 
+"spec.replicas defaults to 1 if not specify"
+
 kubectl get deployments nginx-deploy
 
 kubectl set image deployments nginx-deploy nginx=nginx:1.17 --record
