@@ -128,13 +128,6 @@ image and the command sleep 1000
 a. Name: static-busybox
 b. Image: busybox
 
-Question 8
-
-Create a POD in the finance-yourname namespace named temp-bus with the image
-redis:alpine
-a. Name: temp-bus
-b. Image Name: redis:alpine
-
 Solution 8: 
 
 1. How to find master node:  
@@ -159,6 +152,13 @@ kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126445442-dc767d91-f992-4ddb-b0e4-5048f93c42a8.png)
 
+Question 9
+
+Create a POD in the finance-yourname namespace named temp-bus with the image
+redis:alpine
+a. Name: temp-bus
+b. Image Name: redis:alpine
+
 Solution 9:
 
 kubectl create -f "C:\Yaml-Files\create-finance-pod.yaml"
@@ -173,6 +173,14 @@ kubectl get pods --namespace finance-zahi
 
 ![image](https://user-images.githubusercontent.com/87436052/126275837-60bd69b0-3932-40cc-9320-c9d7fe61007c.png)
 
+Question 10
+
+Create a Persistent Volume with the given specification
+a. Volume Name: pv-analytics
+b. Storage: 100Mi
+c. Access modes: ReadWriteMany
+d. Host Path: /pv/data-analytics
+
 Solution 10: 
 
 kubectl create -f "C:\Yaml-Files\persisten-vol.yaml"
@@ -182,6 +190,15 @@ yaml file: https://github.com/ZahiCohen/JB/blob/main/persisten-vol.yaml
 kubectl get pv
 
 ![image](https://user-images.githubusercontent.com/87436052/126276667-8dde514b-e61f-4382-b566-28c8111597c3.png)
+
+Question 11
+
+Create a Pod called redis-storage-yourname with image: redis:alpine with a Volume
+of type emptyDir that lasts for the life of the Pod. specs:.
+a. Pod named 'redis-storage-yourname'
+b. Pod 'redis-storage-yourname' uses Volume type of emptyDir
+c. Pod 'redis-storage-yourname' uses volumeMount with mountPath =
+/data/redis
 
 Solution 11:
 
@@ -194,6 +211,11 @@ yaml file : https://github.com/ZahiCohen/JB/blob/main/redis-storage-zahi-pod.yam
 kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126277135-f52c63dc-33ee-43e8-b78e-76af78b8473e.png)
+
+Question 12
+
+Create this pod and attached it a persistent volume called pv-1
+a. Make sure the PV mountPath is hostbase : /data
 
 Solution 12:
 
@@ -208,6 +230,16 @@ kubectl get pvc pv-1
 kubectl get pods use-pv-zahi
 
 ![image](https://user-images.githubusercontent.com/87436052/126277986-64ea7098-ab4e-4885-a4e1-3d31771ed067.png)
+
+Question 13
+
+Create a new deployment called nginx-deploy, with image nginx:1.16 and 1 replica.
+Record the version. Next upgrade the deployment to version 1.17 using rolling
+update. Make sure that the version upgrade is recorded in the resource annotation.
+a. Deployment : nginx-deploy. Image: nginx:1.16
+b. Image: nginx:1.16
+c. Task: Upgrade the version of the deployment to 1:17
+d. Task: Record the changes for the image upgrade
 
 Solution 13:
 
@@ -228,6 +260,13 @@ kubectl set image deployments nginx-deploy nginx=nginx:1.17 --record
 kubectl describe deployments nginx-deploy
 
 ![image](https://user-images.githubusercontent.com/87436052/126449925-48f754cc-aa98-440b-8d70-85b0f8f7dd97.png)
+
+Question 14
+
+Create an nginx pod called nginx-resolver using image nginx, expose it internally
+with a service called nginx-resolver-service. Test that you are able to look up the 
+service and pod names from within the cluster. Use the image: busybox:1.28 for dns
+lookup. Record results in /root/nginx-yourname.svc and /root/nginx-yourname.pod
 
 Solution 14:
 
@@ -259,9 +298,26 @@ kubectl get pods nginx-resolver > nginx-zahi.pod
 
 ![image](https://user-images.githubusercontent.com/87436052/126453057-74ea6387-7db4-4b8e-b9bf-b7ee4e6c5d0c.png)
 
+Question 15
+
+Create a static pod on node01 called nginx-critical with image nginx. Create this pod
+on node01 and make sure that it is recreated/restarted automatically in case of a
+failure.
+
 Solution 15: (skipped ) Can Not Apply in minikube found info here :
 
 https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/
+
+Question 16
+
+Create a pod called multi-pod with two containers.
+Container 1, name: alpha, image: nginx
+Container 2: beta, image: busybox, command sleep 4800.
+a. Environment Variables:
+i. container 1:
+ii. name: alpha
+iii. Container 2:
+iv. name: beta
 
 Solution 16:
 
@@ -281,10 +337,15 @@ kubectl describe pods multi-pod
 
 Pod Design Answres:
 -----------------------
+1. Type the command for:
+Get pods with label information
 
 1. kubectl get pods --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126455572-5004d51f-5144-46e9-8005-927593f376a8.png)
+
+2. Create 5 nginx pods in which two of them is labeled env=prod and three of them is
+labeled env=dev
 
 2. nginx x 5 with label
 
@@ -300,30 +361,43 @@ kubectl run nginx-5 --image=nginx --labels env=dev
 
 ![image](https://user-images.githubusercontent.com/87436052/126293909-b06b4bed-28e0-46e0-85f4-17058beb42e3.png)
 
+3. Verify all the pods are created with correct labels
 
 3. kubectl get pods --show-labels 
 
 ![image](https://user-images.githubusercontent.com/87436052/126455812-37b3e965-76cf-4b5b-9988-56631e899272.png)
 
+4. Get the pods with label env=dev
+
 4. kubectl get pods -l env=dev
 
 ![image](https://user-images.githubusercontent.com/87436052/126294372-8b3d51c4-7dbd-46e0-bde3-da7370db759a.png)
+
+5. Get the pods with label env=dev and also output the labels
 
 5. kubectl get pods -l env=dev --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126296691-54e64670-50bd-45bc-9ae8-dd1fb1769682.png)
 
+6. Get the pods with label env=prod
+
 6. kubectl get pods -l env=prod
 
 ![image](https://user-images.githubusercontent.com/87436052/126296024-8582c894-c192-4e5a-8dc0-2359b84aeda0.png)
+
+7. Get the pods with label env=prod and also output the labels
 
 7. kubectl get pods -l env=prod --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126296907-859652ed-6c30-41b5-8ea7-1af763d722d5.png)
 
+8. Get the pods with label env
+
 8. kubectl get pods -l env
 
 ![image](https://user-images.githubusercontent.com/87436052/126297046-5465d23c-00c2-4d87-b523-36e88b3aaf1c.png)
+
+9. Get the pods with labels env=dev and env=prod
 
 9. Run On minikube cmd 
 
@@ -331,17 +405,24 @@ kubectl get pods -l env=dev & kubectl get pods -l env=prod
 
 ![image](https://user-images.githubusercontent.com/87436052/126457542-aed0c847-1a4c-4446-a9a5-41ecbc1bd616.png)
 
+10. Get the pods with labels env=dev and env=prod and output the labels as well
+
 10.   Run On minikube cmd 
 
 kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126457091-58908b93-e93b-429a-ab3f-d9ed8aa0feaf.png)
 
+11. Change the label for one of the pod to env=uat and list all the pods to verify
+
 11. kubectl label pods nginx-5 env=uat --overwrite
 
     kubectl get pods -l env --show-labels 
 
 ![image](https://user-images.githubusercontent.com/87436052/126458307-88f85b3f-2bf3-4c5e-b826-48a801fcd613.png)
+
+12. Remove the labels for the pods that we created now and verify all the labels are
+removed
 
 12. kubectl label pods -l env env-
 
@@ -351,6 +432,7 @@ kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-
 
 ![image](https://user-images.githubusercontent.com/87436052/126458574-7468a97b-4c49-465b-976e-4690b5561329.png)
 
+13. Let’s add the label app=nginx for all the pods and verify (using kubectl)
 
 13.
 
@@ -362,10 +444,13 @@ kubectl get pods --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126460481-db646579-9a8a-45b1-8d36-2bc3363861a0.png)
 
+14. Get all the nodes with labels (if using minikube you would get only master node)
 
 14. kubectl get nodes --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126460784-a8c84bae-d248-4a8b-b7bc-45afcaffd956.png)
+
+15. Label the worker node nodeName=nginxnode
 
 15. 
 
@@ -376,6 +461,10 @@ Run On MiniKube 1 node:
 kubectl label nodes minikube nodeName=nginxnode
 
 ![image](https://user-images.githubusercontent.com/87436052/126460991-42d2243c-68aa-4c37-9427-b1ad271ddf41.png)
+
+16. Create a Pod that will be deployed on the worker node with the label
+nodeName=nginxnode
+Add the nodeSelector to the below and create the pod
 
 16. 
 
@@ -391,6 +480,9 @@ kubectl get pods -l nodeName --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126462321-98440304-a8ff-4e57-b1ce-f0d26d404650.png)
 
+17. Verify the pod that it is scheduled with the node selector on the right node… fix it if
+it’s not behind scheduled. 
+
 17. kubectl describe pods nginx 
 
 ![image](https://user-images.githubusercontent.com/87436052/126305441-195535b2-9f8a-481b-af66-f92ab30bbbda.png)
@@ -403,6 +495,8 @@ yaml file: https://github.com/ZahiCohen/JB/blob/main/pod-deploy-node-worker.yaml
 
 ![image](https://user-images.githubusercontent.com/87436052/126306610-7dc80778-f09f-410e-a52a-191bbd38a4cf.png)
 
+18. Verify the pod nginx that we just created has this label
+
 18. 
 
 kubectl get pods -l nodeName=nginxnode --show-labels
@@ -411,6 +505,11 @@ kubectl get pods -l nodeName=nginxnode --show-labels
 
 DEPLOYMENTS :
 ------------------
+1. Create a deployment called webapp with image nginx with 5 replicas
+a. Use the below command to create a yaml file.
+i. kubectl create deploy webapp --image=nginx --dry-run -o yaml >
+webapp.yaml
+ii. Edit it and add 5 replica’s
 
 1.  
 
@@ -424,6 +523,7 @@ kubectl get deployments webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126307789-b720b790-b745-4d68-819c-186550ec5135.png)
 
+2. Get the deployment rollout status
 
 2. 
 
@@ -431,12 +531,15 @@ kubectl rollout status deployment webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126307902-09105de1-1590-479f-92c2-0fa7a6b8692f.png)
 
+3. Get the replicaset that created with this deployment
+
 3.  
 
 kubectl get rs -l app=webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126464446-f2ebb89d-84e8-478d-8547-ae56e861857a.png)
 
+4. EXPORT the yaml of the replicaset and pods of this deployment
 
 4.  
 
@@ -448,6 +551,9 @@ kubectl get pods -l app=webapp -o yaml
 
 ![image](https://user-images.githubusercontent.com/87436052/126465788-1a3f5598-b134-4b1b-ba16-39af25b8c74f.png)
 
+5. Delete the deployment you just created and watch all the pods are also being
+deleted
+
 5. 
 
 kubectl delete deploy webapp
@@ -455,6 +561,12 @@ kubectl delete deploy webapp
 kubectl get pod -l app=webapp -w
 
 ![image](https://user-images.githubusercontent.com/87436052/126310501-329159b8-116e-42f8-851d-e6a2e1019577.png)
+
+6. Create a deployment of webapp with image nginx:1.17.1 with container port 80 and
+verify the image version
+a. kubectl create deploy webapp --image=nginx:1.17.1 --dry-run -o yaml >
+webapp.yaml
+b. add the port section (80) and create the deployment
 
 6.  
 
@@ -474,6 +586,8 @@ kubectl describe deploy webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126314716-d5651f35-13f9-428b-9741-cc7cb7c4ed90.png)
 
+7. Update the deployment with the image version 1.17.4 and verify
+
 7.
 
 kubectl set image deploy/webapp nginx=nginx:1.17.4
@@ -483,6 +597,8 @@ kubectl describe deploy webapp
 ![image](https://user-images.githubusercontent.com/87436052/126314877-27c8c71c-21ae-4492-9a35-8bcdc0c3096e.png)
 
 ![image](https://user-images.githubusercontent.com/87436052/126314908-9ab4f1b9-dfe5-4ddf-893b-d74495751600.png)
+
+8. Check the rollout history and make sure everything is ok after the update
 
 8.   
 
@@ -496,6 +612,8 @@ kubectl get po -l app=webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126315068-a56cdbe1-9aac-4b00-9692-cfd5c3c9385b.png)
 
+9. Undo the deployment to the previous version 1.17.1 and verify Image has the
+previous version
 
 9.
 
@@ -504,6 +622,15 @@ kubectl rollout undo deploy webapp
 kubectl describe deploy webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126315505-81042a6a-25a7-4fa2-ad4a-566080fa5db6.png)
+
+10. Update the deployment with the wrong image version 1.100 and verify something is
+wrong with the deployment
+a. Expect: kubectl get pods (ImagePullErr)
+b. Undo the deployment with the previous version and verify everything is Ok
+c. kubectl rollout history deploy webapp --revision=7
+d. Check the history of the specific revision of that deployment
+e. update the deployment with the image version latest and check the history
+and verify nothing is going on
 
 10.
 
@@ -574,6 +701,9 @@ kubectl describe webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126474236-cb8aebb4-07c6-4d6f-9a70-3ad47de9eb84.png)
 
+11. Apply the autoscaling to this deployment with minimum 10 and maximum 20 replicas
+and target CPU of 85% and verify hpa is created and replicas are increased to 10
+from 1
 
 11.
 
@@ -585,6 +715,7 @@ kubectl get pod -l app=webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126318540-45e15b42-16bd-488c-935d-c8189c96cd63.png)
 
+13. Clean the cluster by deleting deployment and hpa you just created
 
 13.
 
@@ -594,6 +725,11 @@ kubectl delete hpa webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126318658-95628a89-e30b-4289-8945-0cf5a9fe0158.png)
 
+14. Create a job and make it run 10 times one after one (run > exit > run >exit ..) using
+the following configuration:
+kubectl create job hello-job --image=busybox --dry-run -o yaml -- echo "Hello I am
+from job" > hello-job.yaml”
+a. Add to the above job completions: 10 inside the yaml
 
 14.
 
@@ -611,6 +747,8 @@ yaml file: https://github.com/ZahiCohen/JB/blob/main/hello-job.yaml
 
 CONFIG MAP  
 ================
+1. Create a file called config.txt with two values key1=value1 and key2=value2 and
+verify the file
 
 1.  
 
@@ -623,12 +761,21 @@ cat config.txt
 
 ![image](https://user-images.githubusercontent.com/87436052/126320316-16601806-c448-478e-ae8f-9a52d1e4966d.png)
 
+2. Create a configmap named keyvalcfgmap and read data from the file config.txt and
+verify that configmap is created correctly
+
 
 2.
 
 kubectl create cm keyvalcfgmap --from-file=config.txt
 
 kubectl get cm keyvalcfgmap -o yaml
+
+3. Create an nginx pod and load environment values from the above configmap
+keyvalcfgmap and exec into the pod and verify the environment variables and delete
+the pod
+// first run this command to save the pod yml
+kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml > nginx-pod.yml
 
 3. 
 
@@ -650,6 +797,10 @@ kubectl exec -it nginx -- env
 kubectl delete pod nginx
 
 ![image](https://user-images.githubusercontent.com/87436052/126321711-4bebdbe9-0e36-4188-9f4e-8e60a7fdcde7.png)
+
+
+Done :)))))))))))
+---------------------
 
 
 
