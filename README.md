@@ -337,10 +337,9 @@ kubectl describe pods multi-pod
 
 Pod Design Answres:
 -----------------------
-1. Type the command for:
-Get pods with label information
+1. Type the command for: Get pods with label information
 
-1. kubectl get pods --show-labels
+1.  kubectl get pods --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126455572-5004d51f-5144-46e9-8005-927593f376a8.png)
 
