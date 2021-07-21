@@ -443,6 +443,7 @@ kubectl get po -l app=webapp
 9.
 
 kubectl rollout undo deploy webapp
+
 kubectl describe deploy webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126315505-81042a6a-25a7-4fa2-ad4a-566080fa5db6.png)
@@ -462,7 +463,9 @@ kubectl get pods
 b.
 
 kubectl rollout undo deploy webapp
+
 kubectl rollout status deploy webapp
+
 kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126316607-69be820c-0234-46c5-a3f3-071562679122.png)
