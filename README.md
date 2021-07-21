@@ -146,6 +146,8 @@ kubectl create -f "C:\Yaml-Files\nginx-pod-attach.yaml"
 
 yaml file: https://github.com/ZahiCohen/JB/blob/main/nginx-pod-attach.yaml
 
+kubectl get pv pv-1
+
 kubectl get pvc pv-1
 
 kubectl get pods use-pv-zahi
