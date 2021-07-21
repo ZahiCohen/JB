@@ -310,7 +310,7 @@ kubectl get pods --show-labels
 
 14. kubectl get nodes --show-labels
 
-![image](https://user-images.githubusercontent.com/87436052/126303437-d0d2b3b7-ba97-4299-9c55-9ea39e9b5d7a.png)
+![image](https://user-images.githubusercontent.com/87436052/126460784-a8c84bae-d248-4a8b-b7bc-45afcaffd956.png)
 
 15. kubectl label nodes minikube nodeName=nginxnode
 
