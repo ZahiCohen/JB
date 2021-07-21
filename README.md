@@ -174,11 +174,11 @@ kubectl describe deployments nginx-deploy
 
 ![image](https://user-images.githubusercontent.com/87436052/126449925-48f754cc-aa98-440b-8d70-85b0f8f7dd97.png)
 
-
 Solution 14:
 
-kubectl create -f "C:\Yamkubectl get deploy
-l-Files\nginx-resolver.yaml"
+kubectl create -f "C:\Yaml-Files\nginx-resolver.yaml"
+
+yaml file: https://github.com/ZahiCohen/JB/blob/main/nginx-resolver.yaml
 
 kubectl get svc nginx-resolver-service
 
