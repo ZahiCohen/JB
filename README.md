@@ -174,11 +174,6 @@ kubectl describe deployments nginx-deploy
 
 ![image](https://user-images.githubusercontent.com/87436052/126449925-48f754cc-aa98-440b-8d70-85b0f8f7dd97.png)
 
-kubectl get deploy
-
-kubectl get pods
-
-![image](https://user-images.githubusercontent.com/87436052/126450080-e7e4c356-a745-4d3c-84f7-6cb286125377.png)
 
 Solution 14:
 
