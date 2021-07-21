@@ -475,6 +475,10 @@ kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126316607-69be820c-0234-46c5-a3f3-071562679122.png)
 
+kubectl describe deploy webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126469864-b4faad85-f76b-49da-b804-657bb06fac52.png)
+
 c.
 
 kubectl rollout history deploy webapp --revision=7
