@@ -552,7 +552,7 @@ yaml file: https://github.com/ZahiCohen/JB/blob/main/hello-job.yaml
 ![image](https://user-images.githubusercontent.com/87436052/126319269-b726db70-74d1-47e7-984b-bf2fd723a8a9.png)
 
 
-CONFIG MAP
+CONFIG MAP  
 ================
 
 1.  
