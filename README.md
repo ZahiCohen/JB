@@ -93,11 +93,15 @@ kubectl get nodes
 
 kubectl run --restart=Never --image=busybox static-busybox -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
 
-run on minikube:
+run on minikube with yaml export output :
 
 kubectl run --restart=Never --image=busybox static-busybox -o yaml --command -- sleep 1000
 
 ![image](https://user-images.githubusercontent.com/87436052/126146250-911b55ec-53bf-458c-b549-ce64c2da9973.png)
+
+![image](https://user-images.githubusercontent.com/87436052/126445207-2e896b84-80ed-4ba4-8e3e-f9c3673d7ae1.png)
+
+kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126146404-b96ef533-0eef-48ee-afc8-204c31fe795c.png)
 
