@@ -460,6 +460,11 @@ kubectl get pods
 
 ![image](https://user-images.githubusercontent.com/87436052/126316307-b1e68317-ec34-48a0-96df-e88380eac34c.png)
 
+kubectl describe deploy webapp
+
+![image](https://user-images.githubusercontent.com/87436052/126469540-5b6e16fa-9abe-4343-8b8e-b6b60b8a7e03.png)
+
+
 b.
 
 kubectl rollout undo deploy webapp
