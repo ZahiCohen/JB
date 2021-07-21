@@ -532,7 +532,7 @@ i. kubectl create deploy webapp --image=nginx --dry-run -o yaml >
 webapp.yaml
 ii. Edit it and add 5 replica’s
 
-1.  
+Solution 1:  
 
 kubectl create -f "C:\Yaml-Files\web-app-deployment-5-replic.yaml"
 
@@ -546,7 +546,7 @@ kubectl get deployments webapp
 
 2. Get the deployment rollout status
 
-2. 
+Solution 2:
 
 kubectl rollout status deployment webapp 
 
@@ -554,7 +554,7 @@ kubectl rollout status deployment webapp
 
 3. Get the replicaset that created with this deployment
 
-3.  
+Solution 3:
 
 kubectl get rs -l app=webapp
 
@@ -562,7 +562,7 @@ kubectl get rs -l app=webapp
 
 4. EXPORT the yaml of the replicaset and pods of this deployment
 
-4.  
+Solution 4:
 
 kubectl get rs -l app=webapp -o yaml
 
@@ -575,7 +575,7 @@ kubectl get pods -l app=webapp -o yaml
 5. Delete the deployment you just created and watch all the pods are also being
 deleted
 
-5. 
+Solution 5:
 
 kubectl delete deploy webapp
 
@@ -589,7 +589,7 @@ a. kubectl create deploy webapp --image=nginx:1.17.1 --dry-run -o yaml >
 webapp.yaml
 b. add the port section (80) and create the deployment
 
-6.  
+Solution 6:
 
 kubectl create deploy webapp --image=nginx:1.17.1 --dry-run -o yaml
 
@@ -609,7 +609,7 @@ kubectl describe deploy webapp
 
 7. Update the deployment with the image version 1.17.4 and verify
 
-7.
+Solution 7:
 
 kubectl set image deploy/webapp nginx=nginx:1.17.4
 
@@ -621,7 +621,7 @@ kubectl describe deploy webapp
 
 8. Check the rollout history and make sure everything is ok after the update
 
-8.   
+Solution 8:
 
 kubectl rollout history deploy webapp
 
@@ -636,7 +636,7 @@ kubectl get po -l app=webapp
 9. Undo the deployment to the previous version 1.17.1 and verify Image has the
 previous version
 
-9.
+Solution 9:
 
 kubectl rollout undo deploy webapp
 
@@ -653,7 +653,7 @@ d. Check the history of the specific revision of that deployment
 e. update the deployment with the image version latest and check the history
 and verify nothing is going on
 
-10.
+Solution 10:
 
 a.
 
@@ -726,7 +726,7 @@ kubectl describe webapp
 and target CPU of 85% and verify hpa is created and replicas are increased to 10
 from 1
 
-11.
+Solution 11:
 
 kubectl autoscale deploy webapp --min=10 --max=20 --cpu-percent=85
 
@@ -738,7 +738,7 @@ kubectl get pod -l app=webapp
 
 13. Clean the cluster by deleting deployment and hpa you just created
 
-13.
+Solution 13:
 
 kubectl delete deploy webapp
 
@@ -752,7 +752,7 @@ kubectl create job hello-job --image=busybox --dry-run -o yaml -- echo "Hello I 
 from job" > hello-job.yaml”
 a. Add to the above job completions: 10 inside the yaml
 
-14.
+Solution 14:
 
 kubectl create job hello-job --image=busybox --dry-run -o yaml -- echo "Hello I am from job"
 
@@ -771,7 +771,7 @@ CONFIG MAP
 1. Create a file called config.txt with two values key1=value1 and key2=value2 and
 verify the file
 
-1.  
+Solution 1:
 
 cat >> config.txt << EOF
 key1=value1
@@ -786,7 +786,7 @@ cat config.txt
 verify that configmap is created correctly
 
 
-2.
+Solution 2:
 
 kubectl create cm keyvalcfgmap --from-file=config.txt
 
@@ -798,7 +798,7 @@ the pod
 // first run this command to save the pod yml
 kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml > nginx-pod.yml
 
-3. 
+Solution 3:
 
 kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml
 
