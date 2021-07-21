@@ -378,7 +378,8 @@ kubectl rollout status deployment webapp
 
 kubectl get rs -l app=webapp
 
-![image](https://user-images.githubusercontent.com/87436052/126308425-a4eb1d21-ddfc-47fc-9296-180b480274bc.png)
+![image](https://user-images.githubusercontent.com/87436052/126464446-f2ebb89d-84e8-478d-8547-ae56e861857a.png)
+
 
 4.  
 
