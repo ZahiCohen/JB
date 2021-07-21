@@ -376,9 +376,7 @@ kubectl rollout status deployment webapp
 
 3.  
 
-kubectl get pods
-
-kubectl get rs webapp-5654c984c
+kubectl get rs -l app=webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126308425-a4eb1d21-ddfc-47fc-9296-180b480274bc.png)
 
