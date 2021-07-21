@@ -580,6 +580,8 @@ kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml
 ![image](https://user-images.githubusercontent.com/87436052/126321016-654fbf5a-c792-4bbd-a1f1-a0aeb09af9ec.png)
 
  kubectl create -f "C:\Yaml-Files\config-map-nginx.yaml"
+ 
+ yaml file : https://github.com/ZahiCohen/JB/blob/main/config-map-nginx.yaml
 
 ![image](https://user-images.githubusercontent.com/87436052/126320879-ae761b76-1070-49bd-b758-da89ee69a891.png)
 
