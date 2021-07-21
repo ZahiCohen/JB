@@ -212,6 +212,8 @@ Solution 16:
 
 kubectl create -f "C:\Yaml-Files\multi-pod.yaml"
 
+yaml file : https://github.com/ZahiCohen/JB/blob/main/multi-pod.yaml
+
 kubectl get pods
 
 kubectl describe pods multi-pod
