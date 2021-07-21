@@ -301,7 +301,7 @@ kubectl get pods -l env=dev --show-labels & kubectl get pods -l env=prod --show-
 
  kubectl label pods --all app=nginx --overwrite
 
- kubectl label deployment --all app=nginx --overwrite
+ ### for deployment the command is " kubectl label deployment --all app=nginx --overwrite "
 
 kubectl get pods --show-labels
 
