@@ -58,6 +58,8 @@ Solution 5:
 
 kubectl create -f "C:\Yaml-Files\messaging-service.yaml"
 
+yaml file: https://github.com/ZahiCohen/JB/blob/main/messaging-service.yaml
+
 kubectl get svc
 
 ![image](https://user-images.githubusercontent.com/87436052/126273857-dcb677ef-5109-42c0-8717-e221c5684ba9.png)
