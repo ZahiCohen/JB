@@ -160,19 +160,32 @@ kubectl create -f "C:\Yaml-Files\nginx-deploy.yaml"
 
 yaml file : https://github.com/ZahiCohen/JB/blob/main/nginx-deploy.yaml  ( spec.replicas defaults to 1 if not specify )
 
+kubectl get deploy
+
+kubectl get pods
+
 kubectl get deployments nginx-deploy
-
-kubectl set image deployments nginx-deploy nginx=nginx:1.17 --record
-
-![image](https://user-images.githubusercontent.com/87436052/126278469-e99517bb-8ec9-47e3-8bc4-9c27d6427a3b.png)
 
 kubectl describe deployments nginx-deploy
 
-![image](https://user-images.githubusercontent.com/87436052/126278779-aeb8a90e-4013-4e91-9728-9a3c4db5c1a1.png)
+kubectl set image deployments nginx-deploy nginx=nginx:1.17 --record
+
+![image](https://user-images.githubusercontent.com/87436052/126449702-5061c02c-796a-48e8-b5da-8be723877326.png)
+
+kubectl describe deployments nginx-deploy
+
+![image](https://user-images.githubusercontent.com/87436052/126449925-48f754cc-aa98-440b-8d70-85b0f8f7dd97.png)
+
+kubectl get deploy
+
+kubectl get pods
+
+![image](https://user-images.githubusercontent.com/87436052/126450080-e7e4c356-a745-4d3c-84f7-6cb286125377.png)
 
 Solution 14:
 
-kubectl create -f "C:\Yaml-Files\nginx-resolver.yaml"
+kubectl create -f "C:\Yamkubectl get deploy
+l-Files\nginx-resolver.yaml"
 
 kubectl get svc nginx-resolver-service
 
