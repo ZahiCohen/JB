@@ -188,9 +188,9 @@ kubectl run test-nslookup --image=busybox:1.28 -- nslookup nginx-resolver-servic
 
 kubectl logs test-nslookup
 
-![image](https://user-images.githubusercontent.com/87436052/126452716-e560827e-9b2f-43ed-b749-05ac5952733d.png)
+![image](https://user-images.githubusercontent.com/87436052/126453392-db3fc400-c174-4215-866c-6d4dd37a4dfe.png)
 
-outpit result:
+output result:
 
 kubectl get svc nginx-resolver-service > /root/nginx-zahi.svc
 
