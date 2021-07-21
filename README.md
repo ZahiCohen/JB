@@ -328,7 +328,7 @@ kubectl create -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"
 
 yaml file: https://github.com/ZahiCohen/JB/blob/main/pod-deploy-node-worker.yaml
 
-![image](https://user-images.githubusercontent.com/87436052/126304510-a2eeaf7c-c194-4e7a-bf74-f077bde29305.png)
+![image](https://user-images.githubusercontent.com/87436052/126461984-fb501114-a5e2-467e-9cfb-e3d4f5b0e2ee.png)
 
 17. kubectl describe pods nginx 
 
