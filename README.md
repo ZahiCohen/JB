@@ -188,8 +188,21 @@ kubectl run test-nslookup --image=busybox:1.28 -- nslookup nginx-resolver-servic
 
 kubectl logs test-nslookup
 
-![image](https://user-images.githubusercontent.com/87436052/126282587-a04fcaff-1cf9-4654-a85b-18bbdf083dea.png)
+![image](https://user-images.githubusercontent.com/87436052/126452716-e560827e-9b2f-43ed-b749-05ac5952733d.png)
 
+outpit result:
+
+kubectl get svc nginx-resolver-service > /root/nginx-zahi.svc
+
+kubectl get pods nginx-resolver > /root/nginx-zahi.pod
+
+run on minikube:
+
+kubectl get svc nginx-resolver-service > nginx-zahi.svc
+
+kubectl get pods nginx-resolver > nginx-zahi.pod
+
+![image](https://user-images.githubusercontent.com/87436052/126453057-74ea6387-7db4-4b8e-b9bf-b7ee4e6c5d0c.png)
 
 Solution 15: skip
 
