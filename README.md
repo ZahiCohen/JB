@@ -133,6 +133,8 @@ Solution 11:
 
 kubectl create -f "C:\Yaml-Files\redis-storage-zahi-pod.yaml"
 
+yaml file : https://github.com/ZahiCohen/JB/blob/main/redis-storage-zahi-pod.yaml
+
 ![image](https://user-images.githubusercontent.com/87436052/126277072-e2f0d87a-19ff-49f9-8798-9fd79e5ae3ad.png)
 
 kubectl get pods
