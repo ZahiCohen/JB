@@ -357,6 +357,8 @@ DEPLOYMENTS :
 
 1.  kubectl create -f "C:\Yaml-Files\web-app-deployment-5-replic.yaml"
 
+yaml file: https://github.com/ZahiCohen/JB/blob/main/web-app-deployment-5-replic.yaml
+
 ![image](https://user-images.githubusercontent.com/87436052/126307692-713f5c30-6629-485c-9d5e-47d95661c656.png)
 
 kubectl get deployments webapp 
