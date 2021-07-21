@@ -12,7 +12,9 @@ ubuntu On Windows 10
 
 ------------------------------------------------
 
-1. Deploy a pod named nginx-pod using the nginx:alpine image.
+Question  1
+
+Deploy a pod named nginx-pod using the nginx:alpine image.
 Name: nginx-pod-yourname
 Image: nginx:alpine
 
