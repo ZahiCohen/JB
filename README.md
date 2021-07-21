@@ -123,6 +123,8 @@ Solution 10:
 
 kubectl create -f "C:\Yaml-Files\persisten-vol.yaml"
 
+yaml file: https://github.com/ZahiCohen/JB/blob/main/persisten-vol.yaml
+
 kubectl get pv
 
 ![image](https://user-images.githubusercontent.com/87436052/126276667-8dde514b-e61f-4382-b566-28c8111597c3.png)
