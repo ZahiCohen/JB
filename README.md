@@ -68,7 +68,6 @@ kubectl get svc --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126443526-a18cf812-99ea-41d8-8357-e041dc98595b.png)
 
-
 Solution 7: 
 
 kubectl create -f "C:\Yaml-Files\hr-web-app-deploy.yaml"
@@ -144,6 +143,8 @@ kubectl get pods
 Solution 12:
 
 kubectl create -f "C:\Yaml-Files\nginx-pod-attach.yaml"
+
+yaml file: https://github.com/ZahiCohen/JB/blob/main/nginx-pod-attach.yaml
 
 kubectl get pvc pv-1
 
