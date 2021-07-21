@@ -491,6 +491,11 @@ kubectl rollout history deploy webapp
 
 ![image](https://user-images.githubusercontent.com/87436052/126471190-887a32e5-4959-427d-9fc5-d3f04ec655b8.png)
 
+kubectl rollout history deployment webapp --revision=5
+
+![image](https://user-images.githubusercontent.com/87436052/126471711-c8bf570e-d12c-4317-b384-16fea2f36ec0.png)
+
+
 e.
 
 kubectl set image deploy/webapp nginx=nginx:latest
