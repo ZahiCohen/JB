@@ -29,7 +29,9 @@ kubectl get pods
 ![image](https://user-images.githubusercontent.com/87436052/126272697-2c52f137-5329-46fa-9fb0-36481060127e.png)
 
 
-2. Deploy a messaging pod using the redis:alpine image with the labels set to tier=msg.
+Question  2
+
+Deploy a messaging pod using the redis:alpine image with the labels set to tier=msg.
 Pod Name: messaging
 Image: redis:alpine
 Labels: tier=msg
@@ -51,6 +53,9 @@ kubectl get pods --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126328170-5dc7ace8-26de-42d6-92c2-b2ad7dcc7ca8.png)
 
+Question  3
+
+Create a namespace named apx-x998-yourname
 
 Solution 3:
 
@@ -62,11 +67,25 @@ kubectl get namespace
 
 ![image](https://user-images.githubusercontent.com/87436052/126072318-edcb2d30-54f7-469a-9f7d-418764f35531.png)
 
+Question  4
+
+Get the list of nodes in JSON format and store it in a file at /tmp/nodes-yourname
+
 Solution 4:
 
 kubectl get nodes -o jsonpath='/tmp/nodes-zahi'
 
 ![image](https://user-images.githubusercontent.com/87436052/126060293-758bcbf2-3d9a-486d-a0cc-bc3d8afd172f.png)
+
+Question 5
+
+Create a service messaging-service to expose the messaging application within the
+cluster on port 6379.
+a. Use imperative commands - kubectl
+b. Service: messaging-service
+c. Port: 6379
+d. Type: ClusterIp
+e. Use the right labels
 
 Solution 5:
 
@@ -82,6 +101,14 @@ kubectl get svc --show-labels
 
 ![image](https://user-images.githubusercontent.com/87436052/126443526-a18cf812-99ea-41d8-8357-e041dc98595b.png)
 
+Question 7
+
+Create a deployment named hr-web-app using the image kodekloud/webapp-color
+with 2 replicas
+a. Name: hr-web-app
+b. Image: kodekloud/webapp-color
+c. Replicas: 2
+
 Solution 7: 
 
 kubectl create -f "C:\Yaml-Files\hr-web-app-deploy.yaml"
@@ -93,6 +120,20 @@ kubectl get pods
 kubectl get replicaset
 
 ![image](https://user-images.githubusercontent.com/87436052/126274700-41bcfb87-c0f1-4e47-98a5-62c741a64708.png)
+
+Question 8
+
+Create a static pod named static-busybox on the master node that uses the busybox
+image and the command sleep 1000
+a. Name: static-busybox
+b. Image: busybox
+
+Question 8
+
+Create a POD in the finance-yourname namespace named temp-bus with the image
+redis:alpine
+a. Name: temp-bus
+b. Image Name: redis:alpine
 
 Solution 8: 
 
