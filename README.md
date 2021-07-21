@@ -73,6 +73,8 @@ Solution 7:
 
 kubectl create -f "C:\Yaml-Files\hr-web-app-deploy.yaml"
 
+yaml file https://github.com/ZahiCohen/JB/blob/main/hr-web-app-deploy.yaml
+
 kubectl get replicaset
 
 ![image](https://user-images.githubusercontent.com/87436052/126274700-41bcfb87-c0f1-4e47-98a5-62c741a64708.png)
