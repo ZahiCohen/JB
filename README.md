@@ -322,7 +322,11 @@ kubectl label nodes minikube nodeName=nginxnode
 
 ![image](https://user-images.githubusercontent.com/87436052/126460991-42d2243c-68aa-4c37-9427-b1ad271ddf41.png)
 
-16. kubectl create -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"
+16. 
+
+kubectl create -f "C:\Yaml-Files\pod-deploy-node-worker.yaml"
+
+yaml file: https://github.com/ZahiCohen/JB/blob/main/pod-deploy-node-worker.yaml
 
 ![image](https://user-images.githubusercontent.com/87436052/126304510-a2eeaf7c-c194-4e7a-bf74-f077bde29305.png)
 
